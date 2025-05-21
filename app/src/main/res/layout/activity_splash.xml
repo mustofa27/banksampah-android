@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background_new">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/iv_size_takePhoto"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/logo_rnp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/copyright_back"
+            android:layout_marginBottom="@dimen/spacing_xlarge"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:text="@string/copyright_front"
+            android:textColor="@color/text_black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text_size_very_small" />
+
+        <TextView
+            android:id="@+id/tahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/spacing_xsmall"
+            android:text="tahun"
+            android:textColor="@color/text_black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text_size_very_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/spacing_xsmall"
+            android:text="@string/copyright_back"
+            android:textColor="@color/text_black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text_size_very_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/versi"
+            android:paddingLeft="5sp"
+            android:textColor="@color/text_black"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/text_size_very_small"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:theme="@style/AppTheme.PrimaryAccent" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_new">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:queryHint="Pilih Nama Outlet"
+            android:layout_alignParentRight="true"
+            app:iconifiedByDefault="false"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:background="@drawable/input_round_border"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dashboard_padding"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:text="@string/status_order"
+            android:textColor="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_marginLeft="@dimen/spacing_large">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:src="@drawable/ic_drop_arrow" />
+
+            <Spinner
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_round_border"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_history_to"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            tools:listitem="@layout/history_order_item"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/layout_progress_bar_with_text"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/no_data"
+        layout="@layout/ll_no_data"
+        android:visibility="gone"/>
+
+</FrameLayout>

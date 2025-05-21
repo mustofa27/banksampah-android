@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.registeroutlet.RegistOutletStepOneFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_new">
+
+        <Button
+            android:id="@+id/ro_s1_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:background="@drawable/rounded_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_above="@id/ro_s1_next">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_new"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="step 1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="Kode Outlet"
+                    android:textColor="@color/text_black" />
+
+                <EditText
+                    android:id="@+id/kode_outlet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_xmedium"
+                    android:paddingBottom="@dimen/spacing_xmedium"
+                    android:background="@drawable/input_round_border"
+                    android:textColor="@color/text_black"
+                    android:textColorHighlight="@color/text_grey"
+                    android:hint="input outlet code..."/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="@string/outletName"
+                    android:textColor="@color/text_black" />
+
+                <EditText
+                    android:id="@+id/ro_outletname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:hint="input outlet name..."
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_xmedium"
+                    android:paddingBottom="@dimen/spacing_xmedium"
+                    android:background="@drawable/input_round_border"
+                    android:textColor="@color/text_black"
+                    android:textColorHighlight="@color/text_grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="@string/address"
+                    android:textColor="@color/text_black" />
+
+                <EditText
+                    android:id="@+id/ro_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height_big"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:gravity="top"
+                    android:hint="input address..."
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_xmedium"
+                    android:paddingBottom="@dimen/spacing_xmedium"
+                    android:background="@drawable/input_round_border"
+                    android:textColor="@color/text_black"
+                    android:textColorHighlight="@color/text_grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="@string/city"
+                    android:textColor="@color/text_black" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/ro_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:completionThreshold="1"
+                    android:background="@drawable/input_round_border"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_xmedium"
+                    android:paddingBottom="@dimen/spacing_xmedium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="@string/distributor"
+                    android:textColor="@android:color/black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_drop_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:layout_alignParentRight="true"/>
+                    <Spinner
+                        android:id="@+id/ro_distributor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"
+                        android:background="@drawable/spinner_round_border" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</FrameLayout>

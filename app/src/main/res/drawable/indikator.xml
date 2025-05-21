@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/indicator_aktif"></solid>
+            <corners
+                android:bottomLeftRadius="@dimen/indicator_radius"
+                android:bottomRightRadius="@dimen/indicator_radius"
+                android:topLeftRadius="@dimen/indicator_radius"
+                android:topRightRadius="@dimen/indicator_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/indicator_pasif"></solid>
+            <corners
+                android:bottomLeftRadius="@dimen/indicator_radius"
+                android:bottomRightRadius="@dimen/indicator_radius"
+                android:topLeftRadius="@dimen/indicator_radius"
+                android:topRightRadius="@dimen/indicator_radius" />
+        </shape>
+    </item>
+</selector>

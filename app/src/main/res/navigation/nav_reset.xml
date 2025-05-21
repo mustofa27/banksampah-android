@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_dashboard"
+    app:startDestination="@id/otp">
+
+    <fragment
+        android:id="@+id/otp"
+        android:name="com.qiratek.rnpsales.view.fragment.reset.SendOtpFragment"
+        android:label="Request One Time Password"
+        tools:layout="@layout/fragment_send_otp">
+        <action
+            android:id="@+id/action_otp_to_reset"
+            app:destination="@id/reset" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reset"
+        android:name="com.qiratek.rnpsales.view.fragment.reset.ResetPassFragment"
+        android:label="Reset Password"
+        tools:layout="@layout/fragment_reset_pass">
+        <action
+            android:id="@+id/action_reset_to_otp"
+            app:destination="@id/otp" />
+    </fragment>
+</navigation>

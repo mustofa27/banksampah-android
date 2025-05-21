@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "754536977311",
+    "project_id": "rnpsales-4ee5d",
+    "storage_bucket": "rnpsales-4ee5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754536977311:android:60cbf4ad0500daf81ba3aa",
+        "android_client_info": {
+          "package_name": "com.qiratek.rnpsales"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN5B2WoclUQDT8_Ev39LeWGO_wBVii6rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

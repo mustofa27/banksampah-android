@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.DetailFeed"
+    android:id="@+id/parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomSheet"
+        app:behavior_draggable="true"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/spacing_xlarge"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:cardCornerRadius="@dimen/spacing_large"
+        android:layout_marginBottom="@dimen/spacing_minus_large">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/grey_10"
+            android:padding="@dimen/spacing_large">
+            <View
+                android:layout_width="@dimen/spacing_xxxlarge"
+                android:layout_height="@dimen/spacing_small"
+                android:background="@color/gray"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/spacing_large"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dashboard_padding"
+                android:text="@string/outletName"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tp_outletname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/shape_neutral_2"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/et_padding_horizontal"
+                android:text="@string/outletName" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dashboard_padding"
+                android:text="@string/date"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tp_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/shape_neutral_2"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:hint="@string/date"
+                android:paddingLeft="@dimen/et_padding_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/note"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="@dimen/dashboard_padding"/>
+            <TextView
+                android:id="@+id/tp_note"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height_big"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="top"
+                android:hint="@string/note"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:paddingTop="@dimen/spacing_xmedium"
+                android:paddingBottom="@dimen/spacing_xmedium"
+                android:background="@drawable/shape_neutral_2"
+                android:textColor="@color/text_black"
+                android:textColorHighlight="@color/text_grey"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_white"
+        android:layout_gravity="center_vertical"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

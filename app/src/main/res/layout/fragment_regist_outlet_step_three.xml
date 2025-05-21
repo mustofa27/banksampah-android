@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.registeroutlet.RegistOutletStepOneFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_new">
+
+        <Button
+            android:id="@+id/ro_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_medium"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:background="@drawable/rounded_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ro_submit"
+            android:scrollbars="none"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="step 3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="Nama PIC"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/ro_nm_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_xmedium"
+                    android:paddingBottom="@dimen/spacing_xmedium"
+                    android:background="@drawable/input_round_border"
+                    android:textColor="@color/text_black"
+                    android:textColorHighlight="@color/text_grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="Telepon PIC"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/ro_tlp_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_xmedium"
+                    android:paddingBottom="@dimen/spacing_xmedium"
+                    android:background="@drawable/input_round_border"
+                    android:textColor="@color/text_black"
+                    android:textColorHighlight="@color/text_grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="@string/getCoordinate"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/ro_bt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height_medium"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/rounded_primary_2"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawablePadding="@dimen/bt_drawable_padding_big"
+                    android:paddingLeft="@dimen/bt_padding_horizontal_big"
+                    android:text="@string/getNow"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/et_textsize"
+                    />
+
+                <TextView
+                    android:id="@+id/ro_et_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height_medium"
+                    android:layout_marginBottom="@dimen/et_margin_vertical_big"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_xmedium"
+                    android:paddingBottom="@dimen/spacing_xmedium"
+                    android:background="@drawable/shape_gray"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

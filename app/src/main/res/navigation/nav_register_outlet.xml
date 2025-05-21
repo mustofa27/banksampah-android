@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_dashboard"
+    app:startDestination="@id/step_one">
+    <fragment
+        android:id="@+id/step_one"
+        android:name="com.qiratek.rnpsales.view.fragment.registeroutlet.RegistOutletStepOneFragment"
+        android:label="Step 1"
+        tools:layout="@layout/fragment_regist_outlet_step_one">
+        <action
+            android:id="@+id/action_step_one_to_step_two"
+            app:destination="@id/step_two"
+            app:popUpTo="@id/step_two"/>
+        <action
+            android:id="@+id/action_step_one_to_step_three"
+            app:destination="@id/step_three"
+            app:popUpTo="@id/step_three"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/step_two"
+        android:name="com.qiratek.rnpsales.view.fragment.registeroutlet.RegistOutletStepTwoFragment"
+        android:label="Step 2"
+        tools:layout="@layout/fragment_regist_outlet_step_two">
+        <action
+            android:id="@+id/action_step_two_to_step_one"
+            app:destination="@id/step_one"
+            app:popUpTo="@id/step_one"/>
+        <action
+            android:id="@+id/action_step_two_to_step_three"
+            app:destination="@id/step_three"
+            app:popUpTo="@id/step_three"/>
+    </fragment>
+    <fragment
+        android:id="@+id/step_three"
+        android:name="com.qiratek.rnpsales.view.fragment.registeroutlet.RegistOutletStepThreeFragment"
+        android:label="Step 3"
+        tools:layout="@layout/fragment_regist_outlet_step_three">
+        <action
+            android:id="@+id/action_step_three_to_step_one"
+            app:destination="@id/step_one"
+            app:popUpTo="@id/step_one"/>
+        <action
+            android:id="@+id/action_step_three_to_step_two"
+            app:destination="@id/step_two"
+            app:popUpTo="@id/step_two"/>
+    </fragment>
+</navigation>

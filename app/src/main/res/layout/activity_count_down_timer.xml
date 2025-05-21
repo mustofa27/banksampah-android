@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_new"
+    android:gravity="center_vertical"
+    tools:context=".view.activity.CountDownTimerActivity">
+
+    <ImageView
+        android:id="@+id/ictimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_timer_new" />
+
+    <TextView
+        android:id="@+id/text_view_countdown_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ictimer"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_very_very_big"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checkout Now"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_primary"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:visibility="gone"
+        android:layout_below="@id/text_view_countdown_live"
+        android:fontFamily="@font/poppins_bold"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

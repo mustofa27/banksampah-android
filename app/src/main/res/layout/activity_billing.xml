@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/background_new">
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_xmedium"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:background="@drawable/rounded_primary"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_primary"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save_as_draft"
+        android:layout_margin="@dimen/spacing_large"
+        android:fontFamily="@font/poppins_bold"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_submit"
+        android:fillViewport="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dashboard_padding"
+                android:text="@string/outletName"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/select_visit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/input_round_border"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/et_padding_horizontal"
+                android:text="cari outlet..." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dashboard_padding"
+                android:text="@string/status"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:src="@drawable/ic_drop_arrow" />
+
+                <Spinner
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_round_border"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/containerValidasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_check_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height_medium"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/rounded_primary_2"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawablePadding="@dimen/bt_drawable_padding_big"
+                    android:paddingLeft="@dimen/bt_padding_horizontal_big"
+                    android:text="CHECK IN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/et_textsize"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="Koordinat Outlet"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/sv_koordinat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/shape_gray"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    android:padding="@dimen/medium_margin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="Estimasi Jarak dengan Outlet"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/sv_jarak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/shape_gray"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    android:padding="@dimen/medium_margin"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/small_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="Jumlah"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/jumlah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_xmedium"
+                    android:paddingBottom="@dimen/spacing_xmedium"
+                    android:background="@drawable/input_round_border"
+                    android:textColor="@color/text_black"
+                    android:textColorHighlight="@color/text_grey"
+                    android:hint="Rp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:text="Tipe Pembayaran"
+                android:textColor="@android:color/black" />
+
+            <RadioGroup
+                android:id="@+id/tipe_pembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cash_field"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transfer_field"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/container_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="Bukti Transfer"
+                    android:textColor="@android:color/black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_dashed_line"
+                    android:padding="@dimen/spacing_large"
+                    android:minHeight="@dimen/et_height_xbig"
+                    android:layout_marginBottom="@dimen/spacing_large">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/tp_takephoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/spacing_medium"
+                            android:src="@drawable/ic_picture" />
+
+                        <TextView
+                            android:id="@+id/button_take"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ro_take_photo"
+                            android:background="@drawable/rounded_primary_2"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="@dimen/spacing_large"
+                            android:paddingRight="@dimen/spacing_large"
+                            android:paddingTop="@dimen/spacing_small"
+                            android:paddingBottom="@dimen/spacing_small"
+                            android:text="Upload Gambar"
+                            android:textSize="@dimen/text_size_very_very_small"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_black"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dashboard_padding"
+                android:text="@string/note"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height_big"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="top"
+                android:hint="Masukkan Catatan..."
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:paddingTop="@dimen/spacing_xmedium"
+                android:paddingBottom="@dimen/spacing_xmedium"
+                android:background="@drawable/input_round_border"
+                android:textColor="@color/text_black"
+                android:textColorHighlight="@color/text_grey"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

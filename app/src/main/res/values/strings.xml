@@ -1,0 +1,142 @@
+<resources>
+    <!--versi 2-->
+    <string name="beranda">Home</string>
+    <string name="news">News &amp; Promo</string>
+    <!--versi 1-->
+    <string name="app_name">RNPsales</string>
+    <string name="username">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="otp_number">OTP Number</string>
+    <string name="password">Password</string>
+    <string name="cpassword">Confirm Password</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="welcome_message">Silahkan login untuk akses aplikasi ini</string>
+    <string name="otp_message">Silahkan isi email anda yang terdaftar pada aplikasi ini</string>
+    <string name="reset_message">Silahkan isi data berikut ini</string>
+    <string name="signin">Log In</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="signout">Log Out</string>
+    <string name="forgot">Lupa Password ?</string>
+    <string name="submitVisit">Check In</string>
+    <string name="outletList">Outlet List</string>
+    <string name="sync_data">Sync Data</string>
+    <string name="takePhoto">Market Update</string>
+    <string name="takeOrder">Take Order</string>
+    <string name="history">History</string>
+    <string name="draft">Draft</string>
+    <string name="billing">Billing</string>
+    <string name="menu_bad">Bad Coverage</string>
+    <string name="refresh">Refresh</string>
+    <string name="outletName">Nama Outlet</string>
+    <string name="distributor">Dist / Subdistributor</string>
+    <string name="address">Alamat</string>
+    <string name="city">City</string>
+    <string name="outletType">Channel</string>
+    <string name="outletPhoto">Outlet Photo</string>
+    <string name="outletRank">Outlet Rank</string>
+    <string name="outletPhone">Kode Pos</string>
+    <string name="date">Tanggal</string>
+    <string name="submit">Submit</string>
+    <string name="upload">Upload</string>
+    <string name="photoTitle">Nama Photo</string>
+    <string name="note">Catatan</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="brand">Competitor</string>
+    <string name="registerOutlet">Register Outlet Berhasil. Terima kasih</string>
+    <string name="backToHome">Back to Home</string>
+    <string name="getCoordinate">Koordinat</string>
+    <string name="getNow">Cek Koordinat</string>
+    <string name="next">Next</string>
+    <string name="copyright">Copyright \u00A9 2023. PT. Rempah Nusa Pertiwi</string>
+    <string name="copyright_front">Copyright \u00A9</string>
+    <string name="copyright_back">PT. Rempah Nusa Pertiwi</string>
+    <string name="link">Copyright 2023. PT. Rempah Nusa Pertiwi</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="versi">Versi 1.0.2</string>
+    <string name="visit_date">Visit Date :</string>
+    <string name="enter_date">Enter Visit Date</string>
+    <string name="enter_tanggal">Enter Date</string>
+    <string name="search_hint">Cari Outlet</string>
+
+    <!--- ABOUT APPLICATION -->
+    <string name="about_app">
+         Panduan Penggunaan Aplikasi\n\n
+                                • Anda harus login terlebih dahulu untuk bisa menggunakan Aplikasi ini. \n\n
+                                • Pendaftaran Outlet harus mendapatkan approval, sebelum outlet tersebut akan tampil di outlet list \n\n
+                                • Approval pendaftaran outlet bisa di-skip, apabila saat registrasi outlet ada Effective call \n\n
+                                • Pastikan koordinat Anda sama dengan koordinat outlet, saat Anda melakukan Submit Visit. \n\n
+                                • Secara berkala silahkan tekan tombol "refresh", untuk update data dari server. \n\n
+                                • History akan terhapus, saat Anda Log out aplikasi. \n\n
+                                • Harap di cek ke-valid-an data, sebelum Anda melakukan inputan apapun dalam aplikasi ini. \n\n
+    </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_info">Info</string>
+    <string name="title_activity_outlet_list">OutletList</string>
+    <string name="title_activity_visit_plan">VisitPlan</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_take_photo">Take Photo</string>
+    <string name="title_tab_outlet">Sales Activity</string>
+    <string name="title_tab_news">Informasi, Bantuan, Q&amp;A Sistem</string>
+    <string name="title_tab_competitor">Competitor</string>
+    <string name="title_activity_submit_visit">Submit Visit</string>
+    <string name="title_activity_register_outlet">Register Outlet</string>
+    <string name="title_activity_register_visit_plan">Register Visit Plan</string>
+    <string name="title_profil">Profil</string>
+    <string name="title_about">About</string>
+    <string name="title_recover">Recover your account</string>
+    <string name="message_recover">Untuk mengubah password anda, silahkan lengkapi data diri anda di bawah ini terlebih dahulu.</string>
+    <string name="visit_hari_ini">Outlet yang telah dikunjungi</string>
+    <string name="cari_outlet">Cari outlet...</string>
+    <string name="rooted_notif">Aplikasi ini tidak dapat dipakai karena HP anda terdeteksi sudah di root.</string>
+    <string name="fakegps_notif">Aplikasi ini tidak dapat dipakai karena di HP anda terpasang aplikasi fake gps.</string>
+    <string name="message_must_fill">Pastikan semua isian telah terisi</string>
+    <string name="message_upload_fail">Data gagal terupload karena </string>
+    <string name="status_presence">Status Presence</string>
+    <string name="status_outlet">Status Outlet</string>
+    <string name="status">Status</string>
+    <string name="status_order">Status Order</string>
+    <string name="contact_us">Hubungi Kami</string>
+    <string name="faq">FAQ</string>
+    <string name="tambah_produk">Tambah</string>
+    <string name="pilih_produk">Pilih Produk</string>
+    <string name="acro_checkin_office">CI Office</string>
+    <string name="acro_checkin_visit">CI Visit</string>
+    <string name="acro_checkout_office">CO Office</string>
+    <string name="acro_checkout_visit">CO Visit</string>
+    <string name="message_success">Proses Berhasil</string>
+    <string name="download">Download</string>
+    <string name="ket_tutup">Keterangan Tutup</string>
+    <string name="no_visit_today">Tidak ada visitplan untuk hari ini</string>
+    <string name="date_from">Tanggal Mulai</string>
+    <string name="date_until">Tanggal Selesai</string>
+    <string name="kota_tujuan">Kota Tujuan</string>
+    <string name="pilih">Pilih</string>
+    <string name="catalog">Catalog</string>
+    <string name="product_catalog">Product Catalog</string>
+    <string name="pricelist">Pricelist</string>
+    <string name="spinner_text">spinner text</string>
+    <string name="qty">qty</string>
+    <string name="product_default">Salonpas koyo</string>
+    <string name="satuan">satuan</string>
+    <string name="outlet_field">Outlet :&#160;</string>
+    <string name="cash_field">Cash</string>
+    <string name="transfer_field">Transfer</string>
+    <string name="nominal_giro_field">Nominal Giro :&#160;</string>
+    <string name="no_giro_field">No Giro :&#160;</string>
+    <string name="due_date_field">Due Date :&#160;</string>
+    <string name="input_date_field">Input Date :&#160;</string>
+    <string name="bank_field">Bank :&#160;</string>
+    <string name="note_field">Note :&#160;</string>
+    <string name="no_item">Tidak Ada Data</string>
+    <string name="please_wait">Please wait ...</string>
+    <string name="save_as_draft">Save as Draft</string>
+
+    <string name="file_not_found">File tidak ditemukan</string>
+    <string name="last_visit">Last Visit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

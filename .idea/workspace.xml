@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_3a" />
+        <device id="pixel_2" />
+        <device id="pixel" />
+      </config>
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1390b1b-c4dd-4cb1-b2ae-adfaa55f1650" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_rnp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_salesync.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/splash_img_bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/welcome_bg_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/welcome_bg_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/welcome_bg_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_dynamicanimation_dynamicanimation_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_chrisbanes_PhotoView_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_smarteist_autoimageslider_1_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_api_2_2_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_backend_cct_2_3_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_runtime_2_2_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_17_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_cloud_messaging_16_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_18_0_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_18_0_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_18_0_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_impl_18_0_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_18_0_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_18_0_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_17_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_18_0_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_annotations_16_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_19_5_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_components_16_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_crashlytics_17_4_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_datatransport_17_0_10_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_encoders_16_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_encoders_json_17_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_21_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_17_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_16_3_5_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_interop_16_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_18_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_21_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/qiratek/qisales/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/qiratek/rnpsales/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/AppDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/AppDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/BillingDataDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/BillingDataDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/BrandDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/BrandDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/CityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/CityDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/DistributorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/DistributorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/OutletDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/OutletDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/SatuanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/SatuanDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/TakeOrderDataDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/TakeOrderDataDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/TipeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/TipeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/UserPersonalizeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/UserPersonalizeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/VisitPlanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/VisitPlanDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/VisitReportDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/VisitReportDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/BaseNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/BaseNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/ConnectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/ConnectionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/CustomJsonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/CustomJsonRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/JsonCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/JsonCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/MultipartFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/MultipartFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/MultipartRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/MultipartRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/NetworkCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/NetworkCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/BillingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/BillingData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/BlackListApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/BlackListApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/CheckInTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/CheckInTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Distributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Distributor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/FeedOutlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/FeedOutlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/NewsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/NewsClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Outlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Outlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/PhotoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/PhotoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/PriceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/PriceList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Satuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Satuan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/TakeOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/TakeOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/TakeOrderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/TakeOrderData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Tipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Tipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/TipePhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/TipePhoto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/UserPersonalize.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/UserPersonalize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/VisitPlanDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/VisitPlanDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/VisitProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/VisitProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/VisitReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/VisitReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/ConfigPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/ConfigPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/CustomActivityHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomActivityHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/CustomCountDownTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomCountDownTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/CustomFragmentHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomFragmentHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/MoneyWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/MoneyWatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/OnTimerTickCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/OnTimerTickCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/SharedPreferenceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/SharedPreferenceHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/TimerPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/TimerPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/fcm/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/fcm/TempIDFCM.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/TempIDFCM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/BillingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BillingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BrandRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/CatalogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/CatalogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/CheckInTimerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/CheckInTimerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/CityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/CityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/ConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/ConfigRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/DistributorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/DistributorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/MarketUpdateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/MarketUpdateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/NewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/OutletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/OutletRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/PriceListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/PriceListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/SatuanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/SatuanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/TakeOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/TakeOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/TipeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/TipeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/UserPersonalizeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserPersonalizeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/VisitPlanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitPlanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/VisitReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitReportRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/BaseFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/BillingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/BillingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/CheckoutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/CheckoutActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/CountDownTimerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/CountDownTimerActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/DetailCatalogActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/DetailCatalogActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/DetailFeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/DetailFeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/DetailPriceListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/DetailPriceListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/MarketUpdateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MarketUpdateActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/NewsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/NewsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/NewsDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/NewsDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/OutletActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/OutletActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/OutletDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/OutletDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/OutletSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/OutletSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/ProductSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/ProductSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/RegisterOutlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/RegisterOutlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/ResetPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/ResetPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/SubmitVisit.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SubmitVisit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/SyncActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SyncActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/TakeOrderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/TakeOrderActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/VisitReportActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/VisitReportActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/AdapterCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/AdapterCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/BannerCatalogAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/BannerCatalogAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/BannerPriceListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/BannerPriceListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/BannerPromoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/BannerPromoAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/CustomFragmentPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/CustomFragmentPagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/FragmentAdapterCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/FragmentAdapterCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/GenericRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/GenericRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/GenericViewHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/GenericViewHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/SliderAdapterVH.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/SliderAdapterVH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/CatalogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/CatalogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/EcatalogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/EcatalogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/HistoryBillingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HistoryBillingFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/HistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HistoryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/HistoryTakeOrderFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HistoryTakeOrderFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/PriceListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/PriceListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/ProfileFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/ProfileFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/registeroutlet/RegistOutletStepOneFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepOneFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/registeroutlet/RegistOutletStepTwoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepTwoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/reset/ResetPassFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/reset/ResetPassFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/reset/SendOtpFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/reset/SendOtpFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/BaseViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/BaseViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/BillingViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/BillingViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/CatalogViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/CatalogViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/CheckoutViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/CheckoutViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/CountDownTimerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/CountDownTimerViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/CustomViewModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/CustomViewModelFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/HistoryViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/HistoryViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/HomeViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/HomeViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/MainActivityViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/MainActivityViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/MarketUpdateViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/MarketUpdateViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/NewsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/NewsViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/OutletSearchViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/OutletSearchViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/OutletViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/OutletViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/PriceListViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/PriceListViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/ProductSearchViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/ProductSearchViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/RegisterOutletViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/RegisterOutletViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/ResetPassViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/ResetPassViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/SubmitVisitViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/SubmitVisitViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/SyncViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/SyncViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/TakeOrderViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/TakeOrderViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/UserViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/UserViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/VMRepoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/VMRepoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/VisitReportViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/VisitReportViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_reset_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_reset_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_register_outlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_register_outlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_reset.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_reset.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/qiratek/qisales/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/qiratek/rnpsales/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PMP Sales" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PMP Sales" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PMP Sales" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="Interface" />
+        <option value="Kotlin Class" />
+        <option value="resourceFile" />
+        <option value="Class" />
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Library/CloudStorage/OneDrive-PoliteknikNegeriMadura/Ahmad Mustofa/dosen/Penelitian/2024/Dana Padanan/Sales Canvassing/Pelaksanaan/rnpsales.jks" />
+    <option name="KEY_ALIAS" value="RNP sales" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mustofa27&quot;
+  }
+}</component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PT-Qira-Teknologi-Indonesia/hoss-android.git&quot;,
+    &quot;accountId&quot;: &quot;3324cb11-412e-4c7c-a472-6e31859ee449&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="1t70q57GyCY47Z80MZ2Wep6VzdN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;BundleExportedModule&quot;: &quot;RNPsales.app&quot;,
+    &quot;ExportBundle.BundlePathForQisales.app&quot;: &quot;/Users/mustofaahmad327/Documents/AppDevelopment/qisales_android/app&quot;,
+    &quot;ExportBundle.BundlePathForRNPsales.app&quot;: &quot;/Users/mustofaahmad327/Documents/AppDevelopment/rnpsales/app&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/mustofaahmad327/Documents/AppDevelopment/rnpsales/app/src/main/res/drawable&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mustofaahmad327/Documents/AppDevelopment/salesync&quot;,
+    &quot;recommended.upgrade.last.time.stamp&quot;: &quot;1678856852834&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ExportApk.BuildVariants&quot;: [
+      &quot;release&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="android.template.1144076684">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.-58029324">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.-1502822142">
+      <recent name="com.qiratekindo.pmpsales.view.fragment" />
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.-159035003">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.1936471051">
+      <recent name="com.qiratek.qisales.view.activity" />
+    </key>
+    <key name="android.template.-955714798">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.946363538">
+      <recent name="com.qiratek.qisales.view.activity" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.qiratek.qisales.view.fragment" />
+    </key>
+    <key name="android.template.-92287873">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.538031015">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.1180264852">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qiratek.qisales.viewmodel" />
+      <recent name="com.qiratek.qisales.view.fragment" />
+      <recent name="com.qiratek.qisales.view.adapter" />
+      <recent name="com.qiratekindo.pmpsales.model.repository" />
+      <recent name="com.qiratekindo.pmpsales.model.datasource.local" />
+    </key>
+    <key name="android.template.2053148954">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.1395977718">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/navigation" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/font" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+    </key>
+    <key name="android.template.-304545658">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.-1178610716">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.177530688">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+    <key name="android.template.-625214396">
+      <recent name="com.qiratekindo.pmpsales.view.activity" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Salesync.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1390b1b-c4dd-4cb1-b2ae-adfaa55f1650" name="Default Changelist" comment="" />
+      <created>1622105007725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622105007725</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/LoginActivity.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/DetailCatalogActivity.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BrandRepository.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/OutletRepository.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/RegisterOutletViewModel.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/OutletRepository.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/OutletRepository.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/LoginActivity.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/TakeOrderActivity.java</url>
+          <line>217</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/TakeOrderActivity.java</url>
+          <line>224</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/TakeOrderRepository.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/TakeOrderRepository.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/TakeOrderActivity.java</url>
+          <line>220</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SyncActivity.java</url>
+          <line>282</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SyncActivity.java</url>
+          <line>275</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SyncActivity.java</url>
+          <line>333</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitPlanRepository.java</url>
+          <line>266</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SyncActivity.java</url>
+          <line>280</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BillingRepository.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BillingRepository.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SyncActivity.java</url>
+          <line>332</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SyncActivity.java</url>
+          <line>328</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/CityRepository.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/TipeRepository.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/TipeRepository.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/OutletRepository.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/OutletRepository.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BrandRepository.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/SatuanRepository.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/CountDownTimerActivity.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/CountDownTimerActivity.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/CheckoutActivity.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/MarketUpdateRepository.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/MarketUpdateRepository.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/MarketUpdateRepository.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/ConnectionHandler.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/ConnectionHandler.java</url>
+          <line>215</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/ConnectionHandler.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/ConnectionHandler.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BrandRepository.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/TempIDFCM.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/PriceListFragment.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/PriceListFragment.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/PriceListFragment.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/PriceListFragment.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BrandRepository.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/LoginActivity.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/ConfigRepository.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/ConfigRepository.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SubmitVisit.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SubmitVisit.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/ConfigPreference.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/OutletActivity.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/TakeOrderActivity.java</url>
+          <line>278</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/BillingActivity.java</url>
+          <line>326</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/DetailCatalogActivity.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/DetailPriceListActivity.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HistoryBillingFragment.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MarketUpdateActivity.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/TakeOrderActivity.java</url>
+          <line>284</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserPersonalizeRepository.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BillingRepository.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitPlanRepository.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitPlanRepository.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitPlanRepository.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitPlanRepository.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitPlanRepository.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitPlanRepository.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/CheckoutActivity.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HomeFragment.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/ProductSearch.java</url>
+          <line>317</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/ProductSearch.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/ProductSearch.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/ProductSearch.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/ProductSearch.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MarketUpdateActivity.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomActivityHelper.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomActivityHelper.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MarketUpdateActivity.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomActivityHelper.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MarketUpdateActivity.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomActivityHelper.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="315" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MarketUpdateActivity.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MarketUpdateActivity.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserRepository.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserRepository.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/reset/SendOtpFragment.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserRepository.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserRepository.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserRepository.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserRepository.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/BaseNetwork.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="325" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HomeFragment.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/FeedOutlet.java</url>
+          <line>15</line>
+          <properties field="gambar1" class="com.qiratek.rnpsales.model.entity.FeedOutlet" />
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.qiratek.rnpsales">
+          <value>
+            <CheckInfo lastCheckTimestamp="1747470828018" />
+          </value>
+        </entry>
+        <entry key="com.qiratek.rnpsales.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1747470828020" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

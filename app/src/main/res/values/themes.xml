@@ -1,0 +1,50 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background_new</item>
+        <item name="colorPrimaryDark">@color/background_new</item>
+        <item name="colorAccent">@color/primary_5</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+
+    <!-- theme khusus-->
+    <style name="AppTheme.PrimaryAccent">
+        <item name="colorAccent">@color/primary_5</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/background_new</item>
+        <item name="colorPrimaryDark">@color/background_new</item>
+        <item name="colorAccent">@color/primary_5</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@color/grey_700</item>
+    </style>
+    <style name="SpinnerDropDownItem">
+        <item name="android:textColor">@color/grey_700</item>
+        <item name="android:background">@color/green_600</item>
+    </style>
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="colorPrimary">@color/primary_5</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+    <style name="MaterialSpinner" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="android:strokeColor">@color/colorPrimary</item>
+        <item name="errorEnabled">false</item>
+        <item name="hintTextColor">@color/grey_800</item>
+        <item name="startIconTint">@color/colorPrimary</item>
+    </style>
+</resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_take_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_new">
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_xmedium"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:background="@drawable/rounded_primary"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_primary"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save_as_draft"
+        android:layout_margin="@dimen/spacing_large"
+        android:fontFamily="@font/poppins_bold"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/btn_submit">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/footer"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="@string/outletName"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/select_visit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/input_round_border"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/et_padding_horizontal"
+                    android:text="cari outlet..." />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:text="@string/pilih_produk"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/select_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_primary_2"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_small"
+                    android:paddingBottom="@dimen/spacing_small"
+                    android:text="@string/tambah_produk"
+                    android:textSize="@dimen/text_size_very_small"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_black"/>
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/spacing_large">
+                    <TextView
+                        android:id="@+id/title_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Produk Terpilih"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingRight="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="Check SKU button, hanya untuk SKU baru saja"
+                    android:textStyle="italic"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="@string/status"
+                    android:textColor="@android:color/black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_large">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:src="@drawable/ic_drop_arrow" />
+
+                    <Spinner
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_round_border"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerValidasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <Button
+                        android:id="@+id/btn_check_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/et_height_medium"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:background="@drawable/rounded_primary_2"
+                        android:drawableLeft="@drawable/ic_location"
+                        android:drawablePadding="@dimen/bt_drawable_padding_big"
+                        android:paddingLeft="@dimen/bt_padding_horizontal_big"
+                        android:text="CHECK IN"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/et_textsize"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dashboard_padding"
+                        android:text="Koordinat Outlet"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/sv_koordinat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:background="@drawable/shape_gray"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size"
+                        android:padding="@dimen/medium_margin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dashboard_padding"
+                        android:text="Estimasi Jarak dengan Outlet"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/sv_jarak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:background="@drawable/shape_gray"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size"
+                        android:padding="@dimen/medium_margin"  />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dashboard_padding"
+                    android:text="@string/note"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height_big"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:gravity="top"
+                    android:hint="Masukkan Catatan..."
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_xmedium"
+                    android:paddingBottom="@dimen/spacing_xmedium"
+                    android:background="@drawable/input_round_border"
+                    android:textColor="@color/text_black"
+                    android:textColorHighlight="@color/text_grey"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/loading"
+        android:visibility="gone"
+        layout="@layout/layout_progress_bar_with_text" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_vertical_margin"
+    android:clickable="true"
+    android:background="@color/neutral_1">
+
+    <TextView
+        android:id="@+id/namaOutlet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:text="Toko Contoh"
+        android:textAllCaps="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/footer_tv_size"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tipeOutlet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipe Outlet"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_very_small"
+        android:layout_below="@id/namaOutlet"
+        android:fontFamily="@font/poppins_regular"/>
+    <TextView
+        android:id="@+id/alamatOutlet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jalan Gubeng Kertajaya"
+        android:textSize="@dimen/outlet_list_small"
+        android:textColor="@color/text_black"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_below="@id/tipeOutlet"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/im_outlet_size"
+        android:layout_height="@dimen/im_outlet_size"
+        app:cardCornerRadius="@dimen/im_outlet_radius"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/im_outlet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

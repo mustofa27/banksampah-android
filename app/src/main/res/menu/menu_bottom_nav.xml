@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_home_new"
+        android:title="@string/beranda" />
+
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_history"
+        android:orderInCategory="2"
+        android:title="@string/history" />
+
+    <item
+        android:id="@+id/dummy"
+        android:orderInCategory="3"
+        android:title="" />
+
+    <item
+        android:id="@+id/catalog"
+        android:icon="@drawable/ic_catalog"
+        android:orderInCategory="4"
+        android:title="@string/catalog" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:orderInCategory="5"
+        android:title="@string/profile" />
+</menu>
