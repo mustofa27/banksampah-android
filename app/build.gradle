@@ -65,9 +65,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-messaging'
     implementation 'com.google.firebase:firebase-crashlytics'
-    implementation 'com.github.smarteist:autoimageslider:1.4.0'
     implementation 'com.google.android.gms:play-services-location:21.0.1'
-    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation 'com.github.smarteist:Android-Image-Slider:1.4.0'
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
     implementation 'com.google.android.play:app-update:2.1.0'
 }

@@ -48,259 +48,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1390b1b-c4dd-4cb1-b2ae-adfaa55f1650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_rnp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_salesync.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/splash_img_bot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/welcome_bg_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/welcome_bg_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/welcome_bg_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_dynamicanimation_dynamicanimation_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_chrisbanes_PhotoView_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_smarteist_autoimageslider_1_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_api_2_2_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_backend_cct_2_3_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_runtime_2_2_6_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_17_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_cloud_messaging_16_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_18_0_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_18_0_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_18_0_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_impl_18_0_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_18_0_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_18_0_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_17_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_18_0_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_annotations_16_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_19_5_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_components_16_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_crashlytics_17_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_datatransport_17_0_10_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_encoders_16_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_encoders_json_17_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_21_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_17_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_16_3_5_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_interop_16_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_18_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_21_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/qiratek/qisales/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/qiratek/rnpsales/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/AppDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/AppDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/BillingDataDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/BillingDataDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/BrandDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/BrandDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/CityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/CityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/DistributorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/DistributorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/OutletDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/OutletDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/SatuanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/SatuanDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/TakeOrderDataDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/TakeOrderDataDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/TipeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/TipeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/UserPersonalizeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/UserPersonalizeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/VisitPlanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/VisitPlanDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/local/VisitReportDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/local/VisitReportDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/BaseNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/BaseNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/ConnectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/ConnectionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/CustomJsonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/CustomJsonRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/JsonCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/JsonCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/MultipartFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/MultipartFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/MultipartRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/MultipartRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/datasource/network/NetworkCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/datasource/network/NetworkCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/BillingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/BillingData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/BlackListApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/BlackListApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Brand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/CheckInTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/CheckInTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Distributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Distributor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/FeedOutlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/FeedOutlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/NewsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/NewsClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Outlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Outlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/PhotoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/PhotoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/PriceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/PriceList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Satuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Satuan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/TakeOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/TakeOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/TakeOrderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/TakeOrderData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/Tipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/Tipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/TipePhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/TipePhoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/UserPersonalize.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/UserPersonalize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/VisitPlanDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/VisitPlanDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/VisitProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/VisitProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/entity/VisitReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/entity/VisitReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/ConfigPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/ConfigPreference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/CustomActivityHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomActivityHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/CustomCountDownTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomCountDownTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/CustomFragmentHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/CustomFragmentHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/MoneyWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/MoneyWatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/OnTimerTickCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/OnTimerTickCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/SharedPreferenceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/SharedPreferenceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/TimerPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/TimerPreference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/fcm/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/helper/fcm/TempIDFCM.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/helper/fcm/TempIDFCM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/BillingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BillingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/BrandRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/CatalogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/CatalogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/CheckInTimerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/CheckInTimerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/CityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/CityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/ConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/ConfigRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/DistributorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/DistributorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/MarketUpdateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/MarketUpdateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/NewsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/OutletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/OutletRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/PriceListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/PriceListRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/SatuanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/SatuanRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/TakeOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/TakeOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/TipeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/TipeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/UserPersonalizeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserPersonalizeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/VisitPlanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitPlanRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/model/repository/VisitReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/model/repository/VisitReportRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/BaseActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/BaseFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/BillingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/BillingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/CheckoutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/CheckoutActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/CountDownTimerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/CountDownTimerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/DetailCatalogActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/DetailCatalogActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/DetailFeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/DetailFeed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/DetailPriceListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/DetailPriceListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/MarketUpdateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/MarketUpdateActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/NewsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/NewsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/NewsDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/NewsDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/OutletActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/OutletActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/OutletDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/OutletDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/OutletSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/OutletSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/ProductSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/ProductSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/RegisterOutlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/RegisterOutlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/ResetPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/ResetPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/SubmitVisit.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SubmitVisit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/SyncActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/SyncActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/TakeOrderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/TakeOrderActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/activity/VisitReportActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/activity/VisitReportActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/AdapterCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/AdapterCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/BannerCatalogAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/BannerCatalogAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/BannerPriceListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/BannerPriceListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/BannerPromoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/BannerPromoAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/CustomFragmentPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/CustomFragmentPagerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/FragmentAdapterCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/FragmentAdapterCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/GenericRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/GenericRecyclerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/GenericViewHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/GenericViewHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/adapter/SliderAdapterVH.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/adapter/SliderAdapterVH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/CatalogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/CatalogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/EcatalogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/EcatalogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/HistoryBillingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HistoryBillingFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/HistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HistoryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/HistoryTakeOrderFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HistoryTakeOrderFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/PriceListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/PriceListFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/ProfileFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/ProfileFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/registeroutlet/RegistOutletStepOneFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepOneFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepThreeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/registeroutlet/RegistOutletStepTwoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/registeroutlet/RegistOutletStepTwoFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/reset/ResetPassFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/reset/ResetPassFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/view/fragment/reset/SendOtpFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/view/fragment/reset/SendOtpFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/BaseViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/BaseViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/BillingViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/BillingViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/CatalogViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/CatalogViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/CheckoutViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/CheckoutViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/CountDownTimerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/CountDownTimerViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/CustomViewModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/CustomViewModelFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/HistoryViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/HistoryViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/HomeViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/HomeViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/MainActivityViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/MainActivityViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/MarketUpdateViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/MarketUpdateViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/NewsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/NewsViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/OutletSearchViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/OutletSearchViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/OutletViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/OutletViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/PriceListViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/PriceListViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/ProductSearchViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/ProductSearchViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/RegisterOutletViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/RegisterOutletViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/ResetPassViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/ResetPassViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/SubmitVisitViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/SubmitVisitViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/SyncViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/SyncViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/TakeOrderViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/TakeOrderViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/UserViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/UserViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/VMRepoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/VMRepoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qiratek/qisales/viewmodel/VisitReportViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qiratek/rnpsales/viewmodel/VisitReportViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_reset_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_reset_password.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_register_outlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_register_outlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_reset.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_reset.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/qiratek/qisales/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/qiratek/rnpsales/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +61,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/danapadanan2024/.android/avd/Medium_Phone.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -379,12 +130,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/PT-Qira-Teknologi-Indonesia/hoss-android.git&quot;,
-    &quot;accountId&quot;: &quot;3324cb11-412e-4c7c-a472-6e31859ee449&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mustofa27/salesync.git",
+    "accountId": "09ae0669-b95c-462f-a6f9-637628df1b96"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
