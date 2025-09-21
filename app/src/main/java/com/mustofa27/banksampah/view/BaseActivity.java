@@ -17,15 +17,14 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mustofa27.banksampah.R;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
 
-import com.mustofa27.banksampah.R;
+
 import com.mustofa27.banksampah.model.helper.CustomActivityHelper;
-import com.mustofa27.banksampah.view.activity.OutletSearch;
-import com.mustofa27.banksampah.view.activity.ProductSearch;
 import com.mustofa27.banksampah.viewmodel.BaseViewModel;
 
 import java.io.File;
@@ -150,19 +149,6 @@ public abstract class BaseActivity extends CustomActivityHelper {
                 Toast.makeText(context, context.getString(R.string.file_not_found), Toast.LENGTH_LONG).show();
             }
         }
-    }
-
-    protected void selectOutlet(String tipe){
-        Intent intent = new Intent(this, OutletSearch.class);
-        intent.putExtra("tipe", tipe);
-        intent.putExtra("request_code", SELECT_OUTLET_CODE);
-        activityResultLaunch.launch(intent);
-    }
-
-    protected void selectProduct(){
-        Intent intent = new Intent(this, ProductSearch.class);
-        intent.putExtra("request_code", SELECT_PRODUCT_CODE);
-        activityResultLaunch.launch(intent);
     }
 
     public ActivityResultLauncher<Intent> getActivityResultLaunch() {

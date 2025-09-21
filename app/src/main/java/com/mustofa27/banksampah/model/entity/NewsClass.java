@@ -3,6 +3,7 @@ package com.mustofa27.banksampah.model.entity;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 /**
@@ -10,17 +11,17 @@ import java.util.Calendar;
  */
 
 public class NewsClass implements Serializable, Comparable<NewsClass> {
-    public static String table_name = "news",column_id = "id",column_status = "status",column_judul = "judul",
-            column_headline = "headline",column_content = "content",column_image = "image",column_date = "date_upload";
-    int id,status;
+    public static String table_name = "news";
+    int id;
     @SerializedName("title")
     String judul;
-    String headline;
     String content;
-    @SerializedName("gambar")
+    @SerializedName("image_path")
     String path_image;
     String created_at;
-    int id_category;
+    User author;
+    ArrayList<NewsComment> comments;
+    ArrayList<NewsLike> likes;
 
     public NewsClass() {
 
@@ -34,28 +35,12 @@ public class NewsClass implements Serializable, Comparable<NewsClass> {
         this.id = id;
     }
 
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
     public String getJudul() {
         return judul;
     }
 
     public void setJudul(String judul) {
         this.judul = judul;
-    }
-
-    public String getHeadline() {
-        return headline;
-    }
-
-    public void setHeadline(String headline) {
-        this.headline = headline;
     }
 
     public String getContent() {
@@ -66,11 +51,11 @@ public class NewsClass implements Serializable, Comparable<NewsClass> {
         this.content = content;
     }
 
-    public String getImage() {
+    public String getPath_image() {
         return path_image;
     }
 
-    public void setImage(String path_image) {
+    public void setPath_image(String path_image) {
         this.path_image = path_image;
     }
 
@@ -82,15 +67,35 @@ public class NewsClass implements Serializable, Comparable<NewsClass> {
         this.created_at = created_at;
     }
 
-    public int getId_category() {
-        return id_category;
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
+    }
+
+    public ArrayList<NewsComment> getComments() {
+        return comments;
+    }
+
+    public void setComments(ArrayList<NewsComment> comments) {
+        this.comments = comments;
+    }
+
+    public ArrayList<NewsLike> getLikes() {
+        return likes;
+    }
+
+    public void setLikes(ArrayList<NewsLike> likes) {
+        this.likes = likes;
     }
 
     @Override
     public int compareTo(NewsClass another) {
         //yyyy-mm-dd hh:ii:ss
         Calendar current = Calendar.getInstance();
-        String[] date = getCreated_at().split(" ");
+        String[] date = getCreated_at().split("T");
         String[] tanggal = date[0].split("-");
         String[] jam = date[1].split(":");
         current.set(Integer.valueOf(tanggal[0]), Integer.valueOf(tanggal[1])-1, Integer.valueOf(tanggal[2])

@@ -39,10 +39,6 @@ public class ResetPassViewModel extends BaseViewModel {
         this.navController = navController;
     }
 
-    public User getUser(){
-        return userRepository.getUser();
-    }
-
     public void ResetVMRepoInterface(){
         userRepository.ResetVMRepoInterface(this);
     }

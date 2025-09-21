@@ -10,7 +10,7 @@ import static android.content.Context.MODE_PRIVATE;
  */
 
 public class TempIDFCM {
-    public static String prefName = "pmpsales";
+    public static String prefName = "gogreen";
     private Context context;
     public TempIDFCM(Context context){
         this.context = context;

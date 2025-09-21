@@ -15,7 +15,6 @@ import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.mustofa27.banksampah.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -58,10 +57,8 @@ public class ConnectionHandler {
 
     HurlStack hurlStack;
     public static final int CONNECTION_TIMEOUT = 1000 * 90;
-    public static String IMAGE_URL = "https://rnp.salesapp.my.id/";
-    public String BASE_URL = "https://rnp.salesapp.my.id/api/",
-            IMAGE_NEWS_URL = "http://pmpsmart.com/image_upload/news/",
-            web = "http://pmpsmart.com/",
+    public static String IMAGE_URL = "https://adaksi.or.id/storage/", web = "http://gogreen.my.id/";
+    public String BASE_URL = "https://adaksi.or.id/api/",
             response_message_success = "succes", response_message_error = "error", response_data = "data",
             response_message = "message", response_status = "status", response_pagination = "pagination",
             no_inet_error = "no internet error", auth_error = "authentication failed";

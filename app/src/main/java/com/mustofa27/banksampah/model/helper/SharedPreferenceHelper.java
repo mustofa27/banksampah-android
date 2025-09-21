@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import java.util.Map;
 
 public class SharedPreferenceHelper {
-    private static final String PREFERENCE_USER = "pmpsales";
+    private static final String PREFERENCE_USER = "gogreen";
     private static SharedPreferenceHelper instance = null;
     private Context context;
 

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.mustofa27.banksampah.R;
+import com.mustofa27.banksampah.model.datasource.network.ConnectionHandler;
 import com.mustofa27.banksampah.model.entity.NewsClass;
 import com.mustofa27.banksampah.view.activity.NewsDetail;
 import com.smarteist.autoimageslider.SliderViewAdapter;
@@ -49,7 +50,7 @@ public class BannerPromoAdapter extends SliderViewAdapter<SliderAdapterVH> {
     public void onBindViewHolder(SliderAdapterVH viewHolder, final int position) {
 
         NewsClass sliderItem = mSliderItems.get(position);
-        Glide.with(context).load(sliderItem.getImage()).
+        Glide.with(context).load(ConnectionHandler.IMAGE_URL+sliderItem.getPath_image()).
                 placeholder(R.drawable.no_banner_image).error(R.drawable.no_banner_image).into(viewHolder.imageView);
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {

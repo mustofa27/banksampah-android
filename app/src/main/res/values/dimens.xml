@@ -1,6 +1,7 @@
 <resources>
     <!--versi 2-->
     <dimen name="actionBarSize">56dp</dimen>
+    <dimen name="im_product_size">100dp</dimen>
     <dimen name="small_margin">8dp</dimen>
     <dimen name="medium_margin">10dp</dimen>
     <dimen name="user_icon">30dp</dimen>

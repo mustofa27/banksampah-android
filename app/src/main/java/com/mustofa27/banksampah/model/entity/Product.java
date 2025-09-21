@@ -11,6 +11,7 @@ import androidx.room.PrimaryKey;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by Ahmad Mustofa, PT Trikarya Teknologi on 4/1/2016.
@@ -22,80 +23,62 @@ public class Product implements Serializable {
     @PrimaryKey
     @SerializedName("id")
     @NonNull
-    private String id;
-    private int divisi_id, brand_id, qty = 0;
-    private String kode, nama;
-    @Ignore
-    private Satuan satuan;
-    private long harga;
+    private int id;
+    private String name;
+    private String description;
+    private Long price;
+    private int stock;
+    private int point;
     private String created_at, updated_at;
     @Ignore
-    private boolean isSelected = false;
+    ArrayList<Discount> discounts;
     @Ignore
-    private transient ArrayAdapter satuanAdapter;
+    ArrayList<ProductComment> comments;
+    @Ignore
+    ArrayList<Wishlist> wishlists;
+    String image_path;
 
-    public String getId() {
+    public Product() {
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public int getDivisi_id() {
-        return divisi_id;
+    public String getName() {
+        return name;
     }
 
-    public void setDivisi_id(int divisi_id) {
-        this.divisi_id = divisi_id;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getBrand_id() {
-        return brand_id;
+    public Long getPrice() {
+        return price;
     }
 
-    public void setBrand_id(int brand_id) {
-        this.brand_id = brand_id;
+    public void setPrice(long price) {
+        this.price = price;
     }
 
-    public int getQty() {
-        return qty;
+    public int getStock() {
+        return stock;
     }
 
-    public void setQty(int qty) {
-        this.qty = qty;
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
-    public String getKode() {
-        return kode;
+    public int getPoint() {
+        return point;
     }
 
-    public void setKode(String kode) {
-        this.kode = kode;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
-    public Satuan getSatuan() {
-        return satuan;
-    }
-
-    public void setSatuan(Satuan satuan) {
-        this.satuan = satuan;
-    }
-
-    public long getHarga() {
-        return harga;
-    }
-
-    public void setHarga(long harga) {
-        this.harga = harga;
+    public void setPoint(int point) {
+        this.point = point;
     }
 
     public String getCreated_at() {
@@ -114,29 +97,48 @@ public class Product implements Serializable {
         this.updated_at = updated_at;
     }
 
-    public boolean isSelected() {
-        return isSelected;
+    public ArrayList<Discount> getDiscounts() {
+        return discounts;
     }
 
-    public void setSelected(boolean selected) {
-        isSelected = selected;
+    public void setDiscounts(ArrayList<Discount> discounts) {
+        this.discounts = discounts;
     }
 
-    public ArrayAdapter getSatuanAdapter() {
-        return satuanAdapter;
+    public ArrayList<ProductComment> getComments() {
+        return comments;
     }
 
-    public void setSatuanAdapter(ArrayAdapter satuanAdapter) {
-        this.satuanAdapter = satuanAdapter;
+    public void setComments(ArrayList<ProductComment> comments) {
+        this.comments = comments;
     }
 
-    public Product() {
+    public ArrayList<Wishlist> getWishlists() {
+        return wishlists;
     }
 
+    public void setWishlists(ArrayList<Wishlist> wishlists) {
+        this.wishlists = wishlists;
+    }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     @Override
     public String toString() {
-        return getNama();
+        return getName();
+    }
+
+    public String getImage_path() {
+        return image_path;
+    }
+
+    public void setImage_path(String image_path) {
+        this.image_path = image_path;
     }
 }

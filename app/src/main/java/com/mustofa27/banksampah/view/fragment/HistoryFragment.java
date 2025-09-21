@@ -60,7 +60,7 @@ public class HistoryFragment extends BaseFragment {
             try {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("pilihan_tampil", formPersonalizeBinding.status.getSelectedItemPosition());
-                viewModel.setUserPersonalizeLiveData(jsonObject);
+                //viewModel.setUserPersonalizeLiveData(jsonObject);
             } catch (JSONException e) {
                 showMessageFailed("Json Error");
                 popupWindow.dismiss();
@@ -78,9 +78,9 @@ public class HistoryFragment extends BaseFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentHistoryBinding.inflate(getLayoutInflater());
         binding.rightIcon.setOnClickListener(view -> {
-            if(viewModel.getUserPersonalize() != null){
-                formPersonalizeBinding.status.setSelection(viewModel.getUserPersonalize().getPilihan_tampil());
-            }
+//            if(viewModel.getUserPersonalize() != null){
+//                formPersonalizeBinding.status.setSelection(viewModel.getUserPersonalize().getPilihan_tampil());
+//            }
             popupWindow.showAtLocation(binding.getRoot(), Gravity.CENTER, 10, 10);
         });
         binding.pager.setAdapter(customFragmentPagerAdapter);

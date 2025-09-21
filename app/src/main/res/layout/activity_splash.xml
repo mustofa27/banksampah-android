@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/iv_size_takePhoto"
             android:layout_marginTop="70dp"
-            android:src="@drawable/logo_rnp"
+            android:src="@drawable/logo"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitCenter"/>
         <TextView

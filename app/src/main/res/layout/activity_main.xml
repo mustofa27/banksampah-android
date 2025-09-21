@@ -19,14 +19,14 @@
         android:padding="@dimen/spacing_medium"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/visit"
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="@id/bottomNav"
         app:layout_constraintLeft_toLeftOf="@id/bottomNav"
         app:layout_constraintTop_toTopOf="@id/bottomNav"
         app:layout_constraintBottom_toBottomOf="@id/bottomNav"
-        android:src="@drawable/ic_visit"
+        android:src="@drawable/garbage_exchange"
         android:backgroundTint="@color/primary_5"
         app:tint="@color/white"
         app:borderWidth="0dp"

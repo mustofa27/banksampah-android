@@ -6,7 +6,7 @@ plugins {
 
 android {
     compileSdkVersion 34
-    buildToolsVersion "30.0.3"
+    buildToolsVersion "35.0.0"
 
     buildFeatures {
         dataBinding true
@@ -33,7 +33,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    namespace 'com.qiratek.rnpsales'
+    namespace 'com.mustofa27.banksampah'
 }
 
 dependencies {

@@ -57,16 +57,8 @@ public class ProfileFragment extends BaseFragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(getLayoutInflater());
-        binding.profNama.setText(isStringNotEmpty(viewModel.getUser().getName()) ? viewModel.getUser().getName() : "-");
-        binding.profAlamat.setText(isStringNotEmpty(viewModel.getUser().getAlamat()) ? viewModel.getUser().getAlamat() : "-");
-        binding.profNik.setText("NIK. "+ (isStringNotEmpty(viewModel.getUser().getNik()) ? viewModel.getUser().getNik() : "-"));
-        binding.profTelp.setText(isStringNotEmpty(viewModel.getUser().getPhone()) ? viewModel.getUser().getPhone() : "-");
-        binding.profEmail.setText(isStringNotEmpty(viewModel.getUser().getEmail()) ? viewModel.getUser().getEmail() : "-");
-        binding.profTanggal.setText(isStringNotEmpty(viewModel.getUser().getJoin_date()) ? getDate(viewModel.getUser().getJoin_date()) : "-");
-        Glide.with(this).load(ConnectionHandler.IMAGE_URL + viewModel.getUser().getFoto()).
-                placeholder(R.drawable.user_default).error(R.drawable.user_default).into(binding.imUser);
         binding.containerWa.setOnClickListener(view -> {
-            String url = "https://api.whatsapp.com/send?phone=6281275888897";
+            String url = "https://api.whatsapp.com/send?phone=6287855063917";
             try {
                 PackageManager pm = view.getContext().getPackageManager();
                 pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
@@ -78,8 +70,7 @@ public class ProfileFragment extends BaseFragment {
             }
         });
         binding.containerFaq.setOnClickListener(view -> {
-            String url = "https://rnpsales.id/faq";
-            view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+            view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(ConnectionHandler.web)));
         });
         builder = new AlertDialog.Builder(getContext());
         builder.setTitle("Konfirmasi");
@@ -94,6 +85,7 @@ public class ProfileFragment extends BaseFragment {
         });
         builder.setNegativeButton("Tidak", null);
         binding.containerLogout.setOnClickListener(v -> builder.show());
+        initObserver();
         return binding.getRoot();
     }
 
@@ -114,6 +106,12 @@ public class ProfileFragment extends BaseFragment {
 
     @Override
     protected void initObserver() {
-
+        viewModel.getUserLiveData().observe(getViewLifecycleOwner(), user -> {
+            binding.profNama.setText(isStringNotEmpty(user.getName()) ? user.getName() : "-");
+            binding.profEmail.setText(isStringNotEmpty(user.getEmail()) ? user.getEmail() : "-");
+            binding.profTanggal.setText(isStringNotEmpty(user.getCreated_at()) ? getDate(user.getCreated_at()) : "-");
+            Glide.with(this).load(ConnectionHandler.IMAGE_URL + user.getProfile_picture()).
+                    placeholder(R.drawable.user_default).error(R.drawable.user_default).into(binding.imUser);
+        });
     }
 }

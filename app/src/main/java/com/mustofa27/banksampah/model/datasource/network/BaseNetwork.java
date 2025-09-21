@@ -7,6 +7,7 @@ import android.content.Intent;
 import com.google.gson.Gson;
 import com.mustofa27.banksampah.model.datasource.Result;
 import com.mustofa27.banksampah.model.entity.User;
+import com.mustofa27.banksampah.model.entity.UserToken;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
 import com.mustofa27.banksampah.view.activity.SplashActivity;
 
@@ -22,7 +23,7 @@ public class BaseNetwork {
     private ConnectionHandler connectionHandler;
     protected Context context;
     private Map<String, String> header;
-    private User user;
+    private UserToken userToken;
     protected Gson gson;
     private String apiToken = "";
     private NetworkCallback networkCallback;
@@ -42,13 +43,13 @@ public class BaseNetwork {
     }
 
     private void populateHeader(){
-        if(!SharedPreferenceHelper.getInstance(context).getPreference(User.table).isEmpty()) {
-            user = gson.fromJson(SharedPreferenceHelper.getInstance(context).getPreference(User.table), User.class);
+        if(!SharedPreferenceHelper.getInstance(context).getPreference(UserToken.table).isEmpty()) {
+            userToken = gson.fromJson(SharedPreferenceHelper.getInstance(context).getPreference(UserToken.table), UserToken.class);
         }
         header = new HashMap<>();
-        if (user != null) {
-            header.put("Authorization", "Bearer " + user.getApi_token());
-            apiToken = user.getApi_token();
+        if (userToken != null) {
+            header.put("Authorization", "Bearer " + userToken.getApi_token());
+            apiToken = userToken.getApi_token();
         }
     }
 
@@ -58,7 +59,7 @@ public class BaseNetwork {
             try {
                 networkCallback.onFinish();
                 if (message.equalsIgnoreCase(connectionHandler.response_message_success)) {
-                    if (jsonObject.has("status") && jsonObject.getString("status").contains(connectionHandler.response_message_success)) {
+                    if (jsonObject.has("success") && jsonObject.getBoolean("success")) {
                         networkCallback.onSuccess(new Result.Success(jsonObject.getString("data"), jsonObject.getString("message")));;
                     } else {
                         networkCallback.onError(new Result.Error(jsonObject.getString("message")));
@@ -106,8 +107,8 @@ public class BaseNetwork {
         });
     }
 
-    public User getUser() {
-        return user;
+    public UserToken getUserToken() {
+        return userToken;
     }
 
     public Gson getGson() {

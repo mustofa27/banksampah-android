@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/iv_size_takePhoto"
             android:layout_marginTop="70dp"
-            android:src="@drawable/logo_rnp"
+            android:src="@drawable/logo"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitCenter"/>
         <TextView
@@ -105,7 +105,8 @@
                 android:text="@string/forgot"
                 android:textColor="@color/primary_3"
                 android:textSize="@dimen/text_size"
-                android:layout_marginBottom="@dimen/spacing_xxxlarge"/>
+                android:layout_marginBottom="@dimen/spacing_xxxlarge"
+                android:visibility="gone"/>
 
             <Button
                 android:id="@+id/signin"
