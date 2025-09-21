@@ -19,6 +19,7 @@ import com.mustofa27.banksampah.R;
 import com.mustofa27.banksampah.databinding.FragmentProfileBinding;
 import com.mustofa27.banksampah.model.datasource.network.ConnectionHandler;
 import com.mustofa27.banksampah.model.entity.User;
+import com.mustofa27.banksampah.model.entity.UserToken;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
 import com.mustofa27.banksampah.view.BaseFragment;
 import com.mustofa27.banksampah.view.activity.SplashActivity;
@@ -78,7 +79,7 @@ public class ProfileFragment extends BaseFragment {
         builder.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                SharedPreferenceHelper.getInstance(getContext()).removePreference(User.table);
+                SharedPreferenceHelper.getInstance(getContext()).removePreference(UserToken.table);
                 startActivity(new Intent(getContext(), SplashActivity.class));
                 getActivity().finish();
             }
