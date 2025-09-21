@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/otp"
-        android:name="com.qiratek.rnpsales.view.fragment.reset.SendOtpFragment"
+        android:name="com.mustofa27.banksampah.view.fragment.reset.SendOtpFragment"
         android:label="Request One Time Password"
         tools:layout="@layout/fragment_send_otp">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/reset"
-        android:name="com.qiratek.rnpsales.view.fragment.reset.ResetPassFragment"
+        android:name="com.mustofa27.banksampah.view.fragment.reset.ResetPassFragment"
         android:label="Reset Password"
         tools:layout="@layout/fragment_reset_pass">
         <action

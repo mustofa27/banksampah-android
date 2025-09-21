@@ -6,7 +6,7 @@
     app:startDestination="@id/step_one">
     <fragment
         android:id="@+id/step_one"
-        android:name="com.qiratek.rnpsales.view.fragment.registeroutlet.RegistOutletStepOneFragment"
+        android:name="com.mustofa27.banksampah.view.fragment.registeroutlet.RegistOutletStepOneFragment"
         android:label="Step 1"
         tools:layout="@layout/fragment_regist_outlet_step_one">
         <action
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/step_two"
-        android:name="com.qiratek.rnpsales.view.fragment.registeroutlet.RegistOutletStepTwoFragment"
+        android:name="com.mustofa27.banksampah.view.fragment.registeroutlet.RegistOutletStepTwoFragment"
         android:label="Step 2"
         tools:layout="@layout/fragment_regist_outlet_step_two">
         <action
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/step_three"
-        android:name="com.qiratek.rnpsales.view.fragment.registeroutlet.RegistOutletStepThreeFragment"
+        android:name="com.mustofa27.banksampah.view.fragment.registeroutlet.RegistOutletStepThreeFragment"
         android:label="Step 3"
         tools:layout="@layout/fragment_regist_outlet_step_three">
         <action

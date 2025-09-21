@@ -114,7 +114,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.qiratek.rnpsales.provider"
+            android:authorities="com.mustofa27.banksampah.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
