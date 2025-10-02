@@ -7,9 +7,11 @@ import androidx.lifecycle.LiveData;
 
 import com.mustofa27.banksampah.model.datasource.local.AppDatabase;
 import com.mustofa27.banksampah.model.datasource.network.BaseNetwork;
+import com.mustofa27.banksampah.model.entity.Garbage;
 import com.mustofa27.banksampah.model.entity.NewsClass;
 import com.mustofa27.banksampah.model.entity.Product;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
+import com.mustofa27.banksampah.model.repository.GarbageRepository;
 import com.mustofa27.banksampah.model.repository.NewsRepository;
 import com.mustofa27.banksampah.model.repository.ProductRepository;
 import com.mustofa27.banksampah.model.repository.UserRepository;
@@ -20,22 +22,22 @@ import java.util.ArrayList;
 public class HomeViewModel extends BaseViewModel {
 
     UserRepository userRepository;
-
     ProductRepository productRepository;
+    GarbageRepository garbageRepository;
     LiveData<ArrayList<Product>> productLiveData;
+    LiveData<ArrayList<Garbage>> garbageLiveData;
     NewsRepository newsRepository;
     LiveData<ArrayList<NewsClass>> newsLiveData;
 
     public HomeViewModel(Context context) {
         userRepository = UserRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context),
                 this, AppDatabase.getInstance(context));
-
         productRepository = ProductRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
                 AppDatabase.getInstance(context));
-
         newsRepository = NewsRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
                 AppDatabase.getInstance(context));
-
+        garbageRepository = GarbageRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
+                AppDatabase.getInstance(context));
     }
 
     public LiveData<ArrayList<NewsClass>> getAllNews(){
@@ -48,6 +50,10 @@ public class HomeViewModel extends BaseViewModel {
     public LiveData<ArrayList<Product>> getAllProduct(){
         productLiveData = productRepository.getFromCloud();
         return productLiveData;
+    }
+    public LiveData<ArrayList<Garbage>> getAllGarbage(){
+        garbageLiveData = garbageRepository.getAllGarbage();
+        return garbageLiveData;
     }
 
     public LiveData<ArrayList<Product>> getProductLiveData() {

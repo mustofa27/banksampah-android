@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,6 +20,7 @@ import com.bumptech.glide.Glide;
 import com.mustofa27.banksampah.R;
 import com.mustofa27.banksampah.databinding.FragmentHomeBinding;
 import com.mustofa27.banksampah.model.datasource.network.ConnectionHandler;
+import com.mustofa27.banksampah.model.entity.Garbage;
 import com.mustofa27.banksampah.model.entity.NewsClass;
 import com.mustofa27.banksampah.model.entity.Product;
 import com.mustofa27.banksampah.view.BaseFragment;
@@ -42,6 +44,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     BannerPromoAdapter bannerPromoAdapter;
     ArrayList<NewsClass> promos;
     ArrayList<Product> all;
+    ArrayList<Garbage> garbageArrayList;
     GenericRecyclerAdapter productAdapter,sampahAdapter;
     NumberFormat kursIndonesia;
 
@@ -62,6 +65,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         kursIndonesia.setMaximumFractionDigits(0);
         promos = new ArrayList<>();
         all = new ArrayList<>();
+        garbageArrayList = new ArrayList<>();
         bannerPromoAdapter = new BannerPromoAdapter(getContext(), promos);
         productAdapter = new GenericRecyclerAdapter(all, R.layout.item_product, new AdapterCallback() {
             @Override
@@ -94,6 +98,26 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 return null;
             }
         });
+        sampahAdapter = new GenericRecyclerAdapter(garbageArrayList, R.layout.item_garbage, new AdapterCallback() {
+            @Override
+            public void bindView(View view, Object object) {
+                Garbage tmp = (Garbage) object;
+                TextView name = view.findViewById(R.id.garbage_name);
+                TextView price = view.findViewById(R.id.price);
+                TextView desc = view.findViewById(R.id.description);
+                TextView category = view.findViewById(R.id.category);
+                name.setText(tmp.getName());
+                desc.setText(tmp.getDescription());
+                category.setText(tmp.getCategory() == 2 ? "Organik" : "Anorganik");
+                price.setText(kursIndonesia.format(tmp.getPrice_per_kg()));
+                view.findViewById(R.id.tukar).setOnClickListener(this.onClickItem(tmp));
+            }
+
+            @Override
+            public View.OnClickListener onClickItem(Object object) {
+                return null;
+            }
+        });
     }
 
     @Override
@@ -104,6 +128,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         binding.imageSlider.setSliderAdapter(bannerPromoAdapter);
         binding.product.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
         binding.product.setAdapter(productAdapter);
+        binding.sampah.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        binding.sampah.setAdapter(sampahAdapter);
         binding.seeAllPromo.setOnClickListener(this);
         binding.swipe.setOnRefreshListener(() -> {
             refreshSwipe();
@@ -185,11 +211,18 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                     all.clear();
                 }
                 all.addAll(products);
-                showLoading(false);
                 productAdapter.notifyDataSetChanged();
-                if(binding.swipe.isRefreshing()){
-                    binding.swipe.setRefreshing(false);
-                }
+                viewModel.getAllGarbage().observe(getViewLifecycleOwner(), garbages -> {
+                    if(!garbageArrayList.isEmpty()){
+                        garbageArrayList.clear();
+                    }
+                    garbageArrayList.addAll(garbages);
+                    sampahAdapter.notifyDataSetChanged();
+                    showLoading(false);
+                    if(binding.swipe.isRefreshing()){
+                        binding.swipe.setRefreshing(false);
+                    }
+                });
             });
         });
     }

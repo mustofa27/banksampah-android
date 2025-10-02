@@ -44,7 +44,7 @@ public class ProductRepository extends BaseRepository {
                 ArrayList<Product> localData = new ArrayList<>();
                 localData.addAll(db.productDAO().getAll());
                 if (localData.size() == 0) {
-                    dataSource.Connect(ConnectionHandler.post_method, "product", null, new NetworkCallback() {
+                    dataSource.Connect(ConnectionHandler.get_method, "product", null, new NetworkCallback() {
                         @Override
                         public void onFinish() {
 
