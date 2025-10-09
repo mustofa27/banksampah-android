@@ -1,6 +1,9 @@
 <resources>
     <!--versi 2-->
     <dimen name="actionBarSize">56dp</dimen>
+    <dimen name="nickname_container">48dp</dimen>
+    <dimen name="half_nickname_container">24dp</dimen>
+    <dimen name="icon_action_size">24dp</dimen>
     <dimen name="im_product_size">100dp</dimen>
     <dimen name="small_margin">8dp</dimen>
     <dimen name="medium_margin">10dp</dimen>
@@ -61,6 +64,7 @@
     <dimen name="spacing_xsmall">2dp</dimen>
     <dimen name="spacing_small">3dp</dimen>
     <dimen name="spacing_medium">6dp</dimen>
+    <dimen name="spacing_cart">3.5dp</dimen>
     <dimen name="spacing_xmedium">8dp</dimen>
     <dimen name="spacing_middle">12dp</dimen>
     <dimen name="spacing_large">16dp</dimen>

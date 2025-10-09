@@ -23,10 +23,14 @@
                     android:layout_height="match_parent"
                     android:background="@color/background_new"
                     android:orientation="vertical">
-
+                    <include
+                        layout="@layout/home_topbar"
+                        android:id="@+id/topbar"/>
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/imbanner_size">
+                        android:layout_height="@dimen/imbanner_size"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:layout_marginLeft="@dimen/spacing_large">
 
                         <com.smarteist.autoimageslider.SliderView
                             android:id="@+id/imageSlider"
@@ -50,11 +54,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
-                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="@dimen/spacing_medium"
-                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:layout_marginTop="@dimen/spacing_large"
                             android:layout_marginEnd="@dimen/spacing_medium"
-                            android:layout_marginBottom="@dimen/spacing_xlarge"
                             android:background="@drawable/rounded_primary"
                             android:paddingLeft="@dimen/spacing_large"
                             android:paddingTop="@dimen/spacing_medium"

@@ -25,64 +25,17 @@
         tools:replace="android:allowBackup,label">
         <activity
             android:name=".view.activity.SaveActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity
             android:name=".view.activity.ResetPassword"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
-            android:name=".view.activity.DetailFeed"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.SyncActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.BillingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.MarketUpdateActivity"
-            android:exported="false" />
-        <activity
             android:name=".view.activity.NewsActivity"
             android:exported="false" />
         <activity
-            android:name=".view.activity.ProductSearch"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.CountDownTimerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.TakeOrderActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.CheckoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.OutletSearch"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.VisitReportActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.SubmitVisit"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.DetailCatalogActivity"
-            android:exported="false" />
-        <activity
             android:name=".view.activity.NewsDetail"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.OutletDetail"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.DetailPriceListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.RegisterOutlet"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.OutletActivity"
             android:exported="false" />
         <activity
             android:name=".view.activity.LoginActivity"

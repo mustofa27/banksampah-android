@@ -6,5 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.activity.SaveActivity">
+    <include
+        layout="@layout/text_back_icon_order_topbar"
+        android:id="@+id/topbar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

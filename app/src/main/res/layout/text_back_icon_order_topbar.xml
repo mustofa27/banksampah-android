@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/neutral_1">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/back"
+        android:textColor="@color/neutral_6"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Title"
+        android:textSize="@dimen/text_size_big"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/spacing_large"/>
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="@dimen/actionBarSize"
+        android:layout_height="@dimen/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_back"
+            app:tint="@color/neutral_6"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cart_container"
+        android:layout_width="@dimen/icon_action_size"
+        android:layout_height="@dimen/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/spacing_large">
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_cart"
+            app:tint="@color/neutral_6" />
+        <TextView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_red"
+            android:text="0"
+            android:paddingLeft="@dimen/spacing_cart"
+            android:paddingRight="@dimen/spacing_cart"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:textSize="@dimen/text_size_very_small"
+            android:visibility="gone"
+            android:gravity="center"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

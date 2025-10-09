@@ -52,7 +52,7 @@ public class BannerPromoAdapter extends SliderViewAdapter<SliderAdapterVH> {
         NewsClass sliderItem = mSliderItems.get(position);
         Glide.with(context).load(ConnectionHandler.IMAGE_URL+sliderItem.getPath_image()).
                 placeholder(R.drawable.no_banner_image).error(R.drawable.no_banner_image).into(viewHolder.imageView);
-
+        viewHolder.title.setText(sliderItem.getJudul());
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
