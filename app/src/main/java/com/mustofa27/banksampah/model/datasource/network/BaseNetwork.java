@@ -47,6 +47,7 @@ public class BaseNetwork {
             userToken = gson.fromJson(SharedPreferenceHelper.getInstance(context).getPreference(UserToken.table), UserToken.class);
         }
         header = new HashMap<>();
+        header.put("Accept", "application/json");
         if (userToken != null) {
             header.put("Authorization", "Bearer " + userToken.getApi_token());
             apiToken = userToken.getApi_token();
@@ -60,14 +61,14 @@ public class BaseNetwork {
                 networkCallback.onFinish();
                 if (message.equalsIgnoreCase(connectionHandler.response_message_success)) {
                     if (jsonObject.has("success") && jsonObject.getBoolean("success")) {
-                        networkCallback.onSuccess(new Result.Success(jsonObject.getString("data"), jsonObject.getString("message")));;
+                        networkCallback.onSuccess(new Result.Success(jsonObject.getString("data"), jsonObject.getString("message")));
                     } else {
                         networkCallback.onError(new Result.Error(jsonObject.getString("message")));
                     }
                 } else {
                     networkCallback.onError(new Result.Error(jsonObject.getString("message")));
-                    if(message.equalsIgnoreCase(connectionHandler.auth_error) && !SharedPreferenceHelper.getInstance(context).isEmptyPreference(User.table)){
-                        SharedPreferenceHelper.getInstance(context).removePreference(User.table);
+                    if(message.equalsIgnoreCase(connectionHandler.auth_error) && !SharedPreferenceHelper.getInstance(context).isEmptyPreference(UserToken.table)){
+                        SharedPreferenceHelper.getInstance(context).removePreference(UserToken.table);
                         context.startActivity(new Intent(context, SplashActivity.class));
                         if(context instanceof Activity) {
                             ((Activity) context).finish();

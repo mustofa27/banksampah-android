@@ -34,6 +34,8 @@ public class CustomViewModelFactory implements ViewModelProvider.Factory {
             return (T) new MainActivityViewModel(context);
         } else if (ResetPassViewModel.class.equals(modelClass)) {
             return (T) new ResetPassViewModel(context);
+        } else if (SavingViewModel.class.equals(modelClass)) {
+            return (T) new SavingViewModel(context);
         } else{
             return (T) new UserViewModel(context);
         }

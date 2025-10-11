@@ -46,9 +46,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     ArrayList<Product> all;
     ArrayList<Garbage> garbageArrayList;
     GenericRecyclerAdapter productAdapter,sampahAdapter;
-    NumberFormat kursIndonesia;
 
-    Locale localeID = new Locale("in", "ID");
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -61,8 +59,6 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         progressDialog.setCancelable(false);
         progressDialog.setTitle("Processing");
         progressDialog.setMessage("Please Wait");
-        kursIndonesia = NumberFormat.getCurrencyInstance(localeID);
-        kursIndonesia.setMaximumFractionDigits(0);
         promos = new ArrayList<>();
         all = new ArrayList<>();
         garbageArrayList = new ArrayList<>();
@@ -83,12 +79,12 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                     productPrice.setVisibility(View.VISIBLE);
                     productPriceHanya.setVisibility(View.VISIBLE);
                     productPrice.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
-                    productPrice.setText(kursIndonesia.format(tmp.getPrice()));
-                    productPriceDiscount.setText(kursIndonesia.format((100-tmp.getDiscounts().get(0).getPercentage()) * tmp.getPrice()/100));
+                    productPrice.setText(getMoneyFormat(tmp.getPrice()));
+                    productPriceDiscount.setText(getMoneyFormat((100-tmp.getDiscounts().get(0).getPercentage()) * tmp.getPrice()/100));
                 } else{
                     productPrice.setVisibility(View.GONE);
                     productPriceHanya.setVisibility(View.GONE);
-                    productPriceDiscount.setText(kursIndonesia.format(tmp.getPrice()));
+                    productPriceDiscount.setText(getMoneyFormat(tmp.getPrice()));
                 }
                 view.findViewById(R.id.beli).setOnClickListener(this.onClickItem(tmp));
             }
@@ -108,8 +104,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 TextView category = view.findViewById(R.id.category);
                 name.setText(tmp.getName());
                 desc.setText(tmp.getDescription());
-                category.setText(tmp.getCategory() == 2 ? "Organik" : "Anorganik");
-                price.setText(kursIndonesia.format(tmp.getPrice_per_kg()));
+                category.setText(tmp.getCategoryText());
+                price.setText(getMoneyFormat(tmp.getPrice_per_kg()));
                 view.findViewById(R.id.tukar).setOnClickListener(this.onClickItem(tmp));
             }
 
@@ -197,31 +193,38 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     }
 
     private void refreshSwipe(){
-        viewModel.getAllNews().observe(getViewLifecycleOwner(), newsClasses -> {
-            if(!promos.isEmpty()){
-                promos.clear();
-            }
-            promos.addAll(newsClasses);
-            bannerPromoAdapter.notifyDataSetChanged();
-            if(!promos.isEmpty()) {
-                binding.imageSlider.startAutoCycle();
-            }
-            viewModel.getAllProduct().observe(getViewLifecycleOwner(), products -> {
-                if(!all.isEmpty()){
-                    all.clear();
-                }
-                all.addAll(products);
-                productAdapter.notifyDataSetChanged();
-                viewModel.getAllGarbage().observe(getViewLifecycleOwner(), garbages -> {
-                    if(!garbageArrayList.isEmpty()){
-                        garbageArrayList.clear();
+        viewModel.getMyBalance().observe(getViewLifecycleOwner(), balance -> {
+            binding.saldo.setText(getMoneyFormat(balance.getBalance()));
+            viewModel.getMy().observe(getViewLifecycleOwner(), user -> {
+                binding.topbar.username.setText(user.getName());
+                binding.topbar.nickname.setText(user.getNickName());
+                viewModel.getAllNews().observe(getViewLifecycleOwner(), newsClasses -> {
+                    if(!promos.isEmpty()){
+                        promos.clear();
                     }
-                    garbageArrayList.addAll(garbages);
-                    sampahAdapter.notifyDataSetChanged();
-                    showLoading(false);
-                    if(binding.swipe.isRefreshing()){
-                        binding.swipe.setRefreshing(false);
+                    promos.addAll(newsClasses);
+                    bannerPromoAdapter.notifyDataSetChanged();
+                    if(!promos.isEmpty()) {
+                        binding.imageSlider.startAutoCycle();
                     }
+                    viewModel.getAllProduct().observe(getViewLifecycleOwner(), products -> {
+                        if(!all.isEmpty()){
+                            all.clear();
+                        }
+                        all.addAll(products);
+                        productAdapter.notifyDataSetChanged();
+                        viewModel.getAllGarbage().observe(getViewLifecycleOwner(), garbages -> {
+                            if(!garbageArrayList.isEmpty()){
+                                garbageArrayList.clear();
+                            }
+                            garbageArrayList.addAll(garbages);
+                            sampahAdapter.notifyDataSetChanged();
+                            showLoading(false);
+                            if(binding.swipe.isRefreshing()){
+                                binding.swipe.setRefreshing(false);
+                            }
+                        });
+                    });
                 });
             });
         });

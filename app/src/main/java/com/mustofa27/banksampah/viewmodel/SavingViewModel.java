@@ -22,14 +22,22 @@ import java.util.ArrayList;
 public class SavingViewModel extends BaseViewModel {
 
     SavingRepository savingRepository;
+    GarbageRepository garbageRepository;
+    LiveData<ArrayList<Garbage>> garbageLiveData;
 
     public SavingViewModel(Context context) {
         savingRepository = SavingRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context),
+                this, AppDatabase.getInstance(context));
+        garbageRepository = GarbageRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context),
                 this, AppDatabase.getInstance(context));
     }
 
     public void addSaving(float weight, int garbage_id){
         loading.setValue(true);
         savingRepository.addSaving(weight,garbage_id);
+    }
+    public LiveData<ArrayList<Garbage>> getAllGarbage(){
+        garbageLiveData = garbageRepository.getAllGarbage();
+        return garbageLiveData;
     }
 }

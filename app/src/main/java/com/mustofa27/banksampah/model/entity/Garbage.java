@@ -1,5 +1,6 @@
 package com.mustofa27.banksampah.model.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -42,6 +43,10 @@ public class Garbage {
         this.category = category;
     }
 
+    public String getCategoryText(){
+        return category == 2 ? "Organik" : "Anorganik";
+    }
+
     public String getDescription() {
         return description;
     }
@@ -72,5 +77,11 @@ public class Garbage {
 
     public void setUpdated_at(String updated_at) {
         this.updated_at = updated_at;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return name;
     }
 }

@@ -18,6 +18,15 @@ public class User implements Serializable {
         return name;
     }
 
+    public String getNickName() {
+        String[] names = name.split(" ");
+        if(names.length == 1){
+            return names[0].toUpperCase().substring(0,1);
+        } else{
+            return names[0].toUpperCase().substring(0,1) + names[names.length-1].toUpperCase().substring(0,1);
+        }
+    }
+
     public void setName(String name) {
         this.name = name;
     }

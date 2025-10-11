@@ -6,8 +6,12 @@
     <string name="app_name">Go Green</string>
     <string name="username">Email</string>
     <string name="email">Email</string>
+    <string name="jenis_sampah">Jenis Sampah</string>
+    <string name="berat_sampah">Berat Sampah (kg)</string>
+    <string name="estimasi">Estimasi Harga</string>
     <string name="produk">Produk daur ulang sampah</string>
     <string name="tukar_sampah">Sampah yang bisa ditukar</string>
+    <string name="simpan_message">Silahkan isi form berikut untuk mulai menyimpan sampah</string>
     <string name="beli">Beli Sekarang</string>
     <string name="tukar">Tukar Sekarang</string>
     <string name="saldo_anda">Saldo anda</string>

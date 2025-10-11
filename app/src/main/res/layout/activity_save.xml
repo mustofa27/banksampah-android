@@ -5,9 +5,186 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.SaveActivity">
+    tools:context=".view.activity.SaveActivity"
+    android:background="@color/neutral_1">
     <include
         layout="@layout/text_back_icon_order_topbar"
         android:id="@+id/topbar"/>
 
+    <TextView
+        android:id="@+id/top_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/topbar"
+        android:text="@string/simpan_message"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_margin="@dimen/spacing_large"
+        android:textColor="@color/neutral_6"/>
+
+    <TextView
+        android:id="@+id/title_jenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_simpan"
+        android:text="@string/jenis_sampah"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:textColor="@color/neutral_6"/>
+
+    <RelativeLayout
+        android:id="@+id/container_jenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title_jenis"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_small">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:src="@drawable/ic_drop_arrow" />
+
+        <Spinner
+            android:id="@+id/jenis_sampah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_round_border"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container_konten_jenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        app:layout_constraintTop_toBottomOf="@id/container_jenis">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_large"
+            android:background="@color/neutral_1">
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/neutral_6"
+                android:textSize="@dimen/text_size_very_small"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Nama Category"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/neutral_6"
+                android:textSize="@dimen/text_size_small"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/category"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="Lorem Ipsum"
+                android:maxLines="4"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                android:text="Rp 320.000,-"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/title_berat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/container_konten_jenis"
+        android:text="@string/berat_sampah"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:textColor="@color/neutral_6"/>
+    <EditText
+        android:id="@+id/berat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title_berat"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:background="@drawable/shape_white"
+        android:paddingLeft="@dimen/spacing_large"
+        android:paddingRight="@dimen/spacing_large"
+        android:paddingTop="@dimen/spacing_medium"
+        android:paddingBottom="@dimen/spacing_medium"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="0"/>
+    <TextView
+        android:id="@+id/title_estimasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/berat"
+        android:text="@string/estimasi"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:textColor="@color/neutral_6"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container_estimasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintTop_toBottomOf="@id/title_estimasi">
+        <TextView
+            android:id="@+id/estimasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/title_estimasi"
+            android:background="@color/neutral_1"
+            android:padding="@dimen/spacing_large"
+            android:paddingBottom="@dimen/spacing_medium"
+            android:text="@string/estimasi"/>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:background="@drawable/rounded_primary"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/container_estimasi"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

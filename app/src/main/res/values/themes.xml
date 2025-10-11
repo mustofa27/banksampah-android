@@ -40,11 +40,4 @@
         <item name="fontFamily">@font/poppins_bold</item>
         <item name="android:minHeight">0dp</item>
     </style>
-    <style name="MaterialSpinner" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
-        <item name="boxStrokeColor">@color/colorPrimary</item>
-        <item name="android:strokeColor">@color/colorPrimary</item>
-        <item name="errorEnabled">false</item>
-        <item name="hintTextColor">@color/grey_800</item>
-        <item name="startIconTint">@color/colorPrimary</item>
-    </style>
 </resources>

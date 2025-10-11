@@ -7,10 +7,13 @@ import androidx.lifecycle.LiveData;
 
 import com.mustofa27.banksampah.model.datasource.local.AppDatabase;
 import com.mustofa27.banksampah.model.datasource.network.BaseNetwork;
+import com.mustofa27.banksampah.model.entity.Balance;
 import com.mustofa27.banksampah.model.entity.Garbage;
 import com.mustofa27.banksampah.model.entity.NewsClass;
 import com.mustofa27.banksampah.model.entity.Product;
+import com.mustofa27.banksampah.model.entity.User;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
+import com.mustofa27.banksampah.model.repository.BalanceRepository;
 import com.mustofa27.banksampah.model.repository.GarbageRepository;
 import com.mustofa27.banksampah.model.repository.NewsRepository;
 import com.mustofa27.banksampah.model.repository.ProductRepository;
@@ -24,8 +27,11 @@ public class HomeViewModel extends BaseViewModel {
     UserRepository userRepository;
     ProductRepository productRepository;
     GarbageRepository garbageRepository;
+    BalanceRepository balanceRepository;
     LiveData<ArrayList<Product>> productLiveData;
     LiveData<ArrayList<Garbage>> garbageLiveData;
+    LiveData<Balance> balanceLiveData;
+    LiveData<User> userLiveData;
     NewsRepository newsRepository;
     LiveData<ArrayList<NewsClass>> newsLiveData;
 
@@ -37,6 +43,8 @@ public class HomeViewModel extends BaseViewModel {
         newsRepository = NewsRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
                 AppDatabase.getInstance(context));
         garbageRepository = GarbageRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
+                AppDatabase.getInstance(context));
+        balanceRepository = BalanceRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
                 AppDatabase.getInstance(context));
     }
 
@@ -54,6 +62,16 @@ public class HomeViewModel extends BaseViewModel {
     public LiveData<ArrayList<Garbage>> getAllGarbage(){
         garbageLiveData = garbageRepository.getAllGarbage();
         return garbageLiveData;
+    }
+
+    public LiveData<User> getMy(){
+        userLiveData = userRepository.me();
+        return userLiveData;
+    }
+
+    public LiveData<Balance> getMyBalance(){
+        balanceLiveData = balanceRepository.getMyBalance();
+        return balanceLiveData;
     }
 
     public LiveData<ArrayList<Product>> getProductLiveData() {
