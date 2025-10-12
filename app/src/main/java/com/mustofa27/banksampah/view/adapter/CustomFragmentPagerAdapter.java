@@ -44,7 +44,9 @@ public class CustomFragmentPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public long getItemId(int position) {
-        adapterCallback.onSelectFragment(position);
+        if(adapterCallback != null) {
+            adapterCallback.onSelectFragment(position);
+        }
         return super.getItemId(position);
     }
 }

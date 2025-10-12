@@ -38,7 +38,9 @@ public class Saving {
     public void setTotal_price(long total_price) {
         this.total_price = total_price;
     }
-
+    public String getStatusText() {
+        return status == 0 ? "Menunggu" : (status == 1 ? "Diterima" : "Ditolak");
+    }
     public int getStatus() {
         return status;
     }

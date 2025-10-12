@@ -34,6 +34,7 @@
     <string name="takePhoto">Market Update</string>
     <string name="takeOrder">Take Order</string>
     <string name="history">History</string>
+    <string name="riwayat_subtitle">Riwayat simpanan, transaksi, ataupun penarikan anda</string>
     <string name="draft">Draft</string>
     <string name="billing">Billing</string>
     <string name="menu_bad">Bad Coverage</string>
@@ -150,4 +151,15 @@
     <string name="lihat_semua">Lihat Semua</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="riwayat_tab_title_1">Simpanan</string>
+    <string name="riwayat_tab_title_2">Transaksi</string>
+    <string name="riwayat_tab_title_3">Penarikan</string>
+    <string name="status_transaction_0">Menunggu</string>
+    <string name="status_transaction_1">Diproses</string>
+    <string name="status_transaction_2">Ditolak</string>
+    <string name="status_transaction_3">Selesai</string>
+    <string name="status_semua">Semua</string>
+    <string name="status_0_saving">Menunggu</string>
+    <string name="status_1_saving">Diterima</string>
+    <string name="status_2_saving">Ditolak</string>
 </resources>

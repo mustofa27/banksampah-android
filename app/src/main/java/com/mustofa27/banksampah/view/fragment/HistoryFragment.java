@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -29,62 +30,42 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class HistoryFragment extends BaseFragment {
+public class HistoryFragment extends BaseFragment implements View.OnClickListener {
 
     FragmentHistoryBinding binding;
-    FormPersonalizeBinding formPersonalizeBinding;
-    CustomFragmentPagerAdapter customFragmentPagerAdapter;
+    HistoryViewModel viewModel;
     ArrayList<Fragment> fragmentArrayList;
     ArrayList<String> titles;
-    HistoryViewModel viewModel;
-    PopupWindow popupWindow;
-    String[] isiStatus = new String[]{"Tidak", "Iya"};
-    ArrayAdapter statusAdapter;
+    CustomFragmentPagerAdapter customFragmentPagerAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         viewModel = new ViewModelProvider(this, new CustomViewModelFactory(getContext())).get(HistoryViewModel.class);
-        statusAdapter = new ArrayAdapter(getContext(), R.layout.custom_spinner, isiStatus);
         fragmentArrayList = new ArrayList<>();
-        fragmentArrayList.add(HistoryTakeOrderFragment.newInstance());
-        fragmentArrayList.add(HistoryBillingFragment.newInstance());
+        fragmentArrayList.add(HistorySavingFragment.newInstance());
+        fragmentArrayList.add(HistorySavingFragment.newInstance());
+        fragmentArrayList.add(HistorySavingFragment.newInstance());
         titles = new ArrayList<>();
-        titles.add(getString(R.string.takeOrder));
-        titles.add(getString(R.string.billing));
-        customFragmentPagerAdapter = new CustomFragmentPagerAdapter(getChildFragmentManager(), getLifecycle(), fragmentArrayList, titles,
-                position -> binding.rightIcon.setVisibility(position == 0 ? View.VISIBLE : View.GONE));
-        formPersonalizeBinding = FormPersonalizeBinding.inflate(getLayoutInflater());
-        popupWindow = new PopupWindow(formPersonalizeBinding.getRoot(), LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT,true);
-        formPersonalizeBinding.save.setOnClickListener(view -> {
-            try {
-                JSONObject jsonObject = new JSONObject();
-                jsonObject.put("pilihan_tampil", formPersonalizeBinding.status.getSelectedItemPosition());
-                //viewModel.setUserPersonalizeLiveData(jsonObject);
-            } catch (JSONException e) {
-                showMessageFailed("Json Error");
-                popupWindow.dismiss();
-                e.printStackTrace();
-            }
-        });
-        formPersonalizeBinding.cancel.setOnClickListener(view -> {
-            popupWindow.dismiss();
-        });
-        formPersonalizeBinding.status.setAdapter(statusAdapter);
-        viewModel.setPopupWindow(popupWindow);
+        titles.add(getContext().getString(R.string.riwayat_tab_title_1));
+        titles.add(getContext().getString(R.string.riwayat_tab_title_2));
+        titles.add(getContext().getString(R.string.riwayat_tab_title_3));
+        customFragmentPagerAdapter = new CustomFragmentPagerAdapter(this, fragmentArrayList, titles, null);
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentHistoryBinding.inflate(getLayoutInflater());
-        binding.rightIcon.setOnClickListener(view -> {
-//            if(viewModel.getUserPersonalize() != null){
-//                formPersonalizeBinding.status.setSelection(viewModel.getUserPersonalize().getPilihan_tampil());
-//            }
-            popupWindow.showAtLocation(binding.getRoot(), Gravity.CENTER, 10, 10);
-        });
+        binding.title.setText(getContext().getText(R.string.history));
+        binding.subtitle.setText(getContext().getText(R.string.riwayat_subtitle));
+        //binding.cartContainer.setOnClickListener(v -> startActivity(new Intent(getContext(), CartActivity.class)));
         binding.pager.setAdapter(customFragmentPagerAdapter);
-        new TabLayoutMediator(binding.tabLayout, binding.pager, (tab, position) -> tab.setText(customFragmentPagerAdapter.getTitle(position))).attach();
+        binding.pager.setUserInputEnabled(false);
+        binding.tab1.setOnClickListener(this);
+        binding.tab2.setOnClickListener(this);
+        binding.tab3.setOnClickListener(this);
+        binding.tab1.setActivated(true);
+        initObserver();
         return binding.getRoot();
     }
 
@@ -95,7 +76,10 @@ public class HistoryFragment extends BaseFragment {
 
     @Override
     protected void showLoading(boolean isLoading) {
-
+        if(isLoading)
+            showLoadingDialog();
+        else
+            dismissLoadingDialog();
     }
 
     @Override
@@ -105,6 +89,37 @@ public class HistoryFragment extends BaseFragment {
 
     @Override
     protected void initObserver() {
+        viewModel.getStatus().observe(getViewLifecycleOwner(), status -> {
+            viewModel.getLoading().setValue(false);
+        });
+        viewModel.getLoading().observe(getViewLifecycleOwner(), this::showLoading);
+//        viewModel.getCartItem().observe(getActivity(), cartItems -> {
+//            binding.indicator.setText("" + cartItems.size());
+//            binding.indicator.setVisibility(cartItems.size() > 0 ? View.VISIBLE : View.GONE);
+//        });
+    }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.tab_1:
+                binding.tab1.setActivated(true);
+                binding.tab2.setActivated(false);
+                binding.tab3.setActivated(false);
+                binding.pager.setCurrentItem(0);
+                break;
+            case R.id.tab_2:
+                binding.tab2.setActivated(true);
+                binding.tab1.setActivated(false);
+                binding.tab3.setActivated(false);
+                binding.pager.setCurrentItem(1);
+                break;
+            case R.id.tab_3:
+                binding.tab3.setActivated(true);
+                binding.tab1.setActivated(false);
+                binding.tab2.setActivated(false);
+                binding.pager.setCurrentItem(2);
+                break;
+        }
     }
 }

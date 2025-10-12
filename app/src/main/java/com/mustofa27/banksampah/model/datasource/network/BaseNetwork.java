@@ -61,7 +61,11 @@ public class BaseNetwork {
                 networkCallback.onFinish();
                 if (message.equalsIgnoreCase(connectionHandler.response_message_success)) {
                     if (jsonObject.has("success") && jsonObject.getBoolean("success")) {
-                        networkCallback.onSuccess(new Result.Success(jsonObject.getString("data"), jsonObject.getString("message")));
+                        if(jsonObject.has("current_page")){
+                            networkCallback.onSuccess(new Result.Success(jsonObject.toString(), jsonObject.getString("message")));
+                        } else {
+                            networkCallback.onSuccess(new Result.Success(jsonObject.getString("data"), jsonObject.getString("message")));
+                        }
                     } else {
                         networkCallback.onError(new Result.Error(jsonObject.getString("message")));
                     }

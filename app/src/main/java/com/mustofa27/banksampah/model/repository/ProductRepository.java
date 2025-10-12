@@ -8,6 +8,7 @@ import com.mustofa27.banksampah.model.datasource.network.BaseNetwork;
 import com.mustofa27.banksampah.model.datasource.network.ConnectionHandler;
 import com.mustofa27.banksampah.model.datasource.network.NetworkCallback;
 import com.mustofa27.banksampah.model.entity.Product;
+import com.mustofa27.banksampah.model.entity.ProductPagination;
 import com.mustofa27.banksampah.model.entity.User;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
 import com.mustofa27.banksampah.viewmodel.VMRepoInterface;
@@ -93,14 +94,12 @@ public class ProductRepository extends BaseRepository {
 
             @Override
             public void onSuccess(Result result) {
-                Product[] products = dataSource.getGson().fromJson(((Result.Success) result).getData().toString(), Product[].class);
-                ArrayList<Product> visitPlanDbs = new ArrayList<>();
-                visitPlanDbs.addAll(Arrays.asList(products));
+                ProductPagination productPagination = dataSource.getGson().fromJson(((Result.Success) result).getData().toString(), ProductPagination.class);
                 new Thread() {
                     @Override
                     public void run() {
-                        List<Long> tmp = db.productDAO().insertAll(products);
-                        productListMutableLiveData.postValue(visitPlanDbs);
+                        List<Long> tmp = db.productDAO().insertAll(productPagination.getData().toArray(new Product[0]));
+                        productListMutableLiveData.postValue(productPagination.getData());
                         vmRepoInterface.setMessage(result.toString());
                     }
                 }.start();

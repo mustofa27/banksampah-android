@@ -63,6 +63,7 @@
     <dimen name="spacing_xxsmall">1dp</dimen>
     <dimen name="spacing_xsmall">2dp</dimen>
     <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_minus_medium">-6dp</dimen>
     <dimen name="spacing_medium">6dp</dimen>
     <dimen name="spacing_cart">3.5dp</dimen>
     <dimen name="spacing_xmedium">8dp</dimen>

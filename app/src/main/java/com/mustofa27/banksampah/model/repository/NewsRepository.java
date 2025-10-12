@@ -9,6 +9,7 @@ import com.mustofa27.banksampah.model.datasource.network.BaseNetwork;
 import com.mustofa27.banksampah.model.datasource.network.ConnectionHandler;
 import com.mustofa27.banksampah.model.datasource.network.NetworkCallback;
 import com.mustofa27.banksampah.model.entity.NewsClass;
+import com.mustofa27.banksampah.model.entity.NewsPagination;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
 import com.mustofa27.banksampah.viewmodel.VMRepoInterface;
 
@@ -47,10 +48,8 @@ public class NewsRepository extends BaseRepository {
 
                 @Override
                 public void onSuccess(Result result) {
-                    NewsClass[] tipeArray = dataSource.getGson().fromJson(((Result.Success) result).getData().toString(), NewsClass[].class);
-                    ArrayList<NewsClass> newsClasses = new ArrayList<>();
-                    newsClasses.addAll(Arrays.asList(tipeArray));
-                    newsMutableLiveData.setValue(newsClasses);
+                    NewsPagination newsPagination = dataSource.getGson().fromJson(((Result.Success) result).getData().toString(), NewsPagination.class);
+                    newsMutableLiveData.setValue(newsPagination.getData());
                     vmRepoInterface.setMessage(result.toString());
                 }
 

@@ -36,6 +36,8 @@ public class CustomViewModelFactory implements ViewModelProvider.Factory {
             return (T) new ResetPassViewModel(context);
         } else if (SavingViewModel.class.equals(modelClass)) {
             return (T) new SavingViewModel(context);
+        } else if (HistorySavingViewModel.class.equals(modelClass)) {
+            return (T) new HistorySavingViewModel(context);
         } else{
             return (T) new UserViewModel(context);
         }
