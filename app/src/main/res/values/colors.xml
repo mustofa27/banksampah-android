@@ -350,11 +350,14 @@
     <color name="primary_2">#9494d2</color>
     <color name="primary_1">#c6c5ff</color>
 
-    <color name="secondary_1">#bfd1ff</color>
-    <color name="secondary_2">#99aeff</color>
-    <color name="secondary_3">#728cff</color>
-    <color name="secondary_4">#486cdb</color>
-    <color name="secondary_5">#084db7</color>
+    <color name="secondary_1">#F3F6F9</color>
+    <color name="secondary_2">#D1D7DE</color>
+    <color name="secondary_3">#A2AEBD</color>
+    <color name="secondary_4">#74869B</color>
+    <color name="secondary_5">#455D7A</color>
+    <color name="secondary_6">#173559</color>
+    <color name="secondary_7">#10253E</color>
+    <color name="secondary_8">#0C1B2D</color>
 
     <color name="neutral_1">#F3F6F9</color>
     <color name="neutral_2">#F5F5F5</color>

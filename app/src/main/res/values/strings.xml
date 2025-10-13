@@ -112,7 +112,10 @@
     <string name="status_order">Status Order</string>
     <string name="contact_us">Hubungi Kami</string>
     <string name="faq">FAQ</string>
+    <string name="total_harga">Total Harga</string>
     <string name="tambah_produk">Tambah</string>
+    <string name="add_to_cart">Masukkan Keranjang</string>
+    <string name="checkout">Lanjutkan Pembelian</string>
     <string name="pilih_produk">Pilih Produk</string>
     <string name="acro_checkin_office">CI Office</string>
     <string name="acro_checkin_visit">CI Visit</string>
@@ -127,7 +130,7 @@
     <string name="kota_tujuan">Kota Tujuan</string>
     <string name="pilih">Pilih</string>
     <string name="catalog">Catalog</string>
-    <string name="product_catalog">Product Catalog</string>
+    <string name="product_catalog">Katalog produk hasil daur ulang sampah</string>
     <string name="pricelist">Pricelist</string>
     <string name="spinner_text">spinner text</string>
     <string name="qty">qty</string>

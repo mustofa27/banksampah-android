@@ -1,5 +1,6 @@
 package com.mustofa27.banksampah.model.repository;
 
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.mustofa27.banksampah.model.datasource.Result;
@@ -9,6 +10,8 @@ import com.mustofa27.banksampah.model.datasource.network.ConnectionHandler;
 import com.mustofa27.banksampah.model.datasource.network.NetworkCallback;
 import com.mustofa27.banksampah.model.entity.Product;
 import com.mustofa27.banksampah.model.entity.ProductPagination;
+import com.mustofa27.banksampah.model.entity.Saving;
+import com.mustofa27.banksampah.model.entity.SavingPagination;
 import com.mustofa27.banksampah.model.entity.User;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
 import com.mustofa27.banksampah.viewmodel.VMRepoInterface;
@@ -25,6 +28,7 @@ public class ProductRepository extends BaseRepository {
 
     private static volatile ProductRepository instance;
     private MutableLiveData<ArrayList<Product>> productListMutableLiveData;
+    int last_page, current_page;
 
     private ProductRepository(BaseNetwork baseNetwork, SharedPreferenceHelper sharedPreferenceHelper, VMRepoInterface vmRepoInterface, AppDatabase db) {
         super(baseNetwork, sharedPreferenceHelper, vmRepoInterface, db);
@@ -34,7 +38,42 @@ public class ProductRepository extends BaseRepository {
         if (instance == null) {
             instance = new ProductRepository(baseNetwork, sharedPreferenceHelper, vmRepoInterface, db);
         }
+        instance.last_page = 0;
         return instance;
+    }
+
+    public LiveData<ArrayList<Product>> getData(int page){
+        if(page == 1){
+            productListMutableLiveData = new MutableLiveData<>();
+        }
+        if(page <= last_page || last_page == 0) {
+            dataSource.Connect(ConnectionHandler.get_method, "product?page=" + page, null, new NetworkCallback() {
+                @Override
+                public void onFinish() {
+
+                }
+
+                @Override
+                public void onSuccess(Result result) {
+                    ProductPagination productPagination = dataSource.getGson().fromJson(((Result.Success) result).getData().toString(), ProductPagination.class);
+                    last_page = productPagination.getLast_page();
+                    current_page = productPagination.getCurrent_page();
+                    productListMutableLiveData.setValue(productPagination.getData());
+                    vmRepoInterface.setMessage(result.toString());
+                    vmRepoInterface.getStatus().setValue(true);
+                }
+
+                @Override
+                public void onError(Result result) {
+                    vmRepoInterface.setMessage(result.toString());
+                    vmRepoInterface.getStatus().setValue(false);
+                }
+            });
+        } else{
+            vmRepoInterface.setMessage("Data tidak tersedia");
+            vmRepoInterface.getStatus().setValue(false);
+        }
+        return productListMutableLiveData;
     }
 
     public MutableLiveData<ArrayList<Product>> getAllProduk(){
@@ -112,5 +151,8 @@ public class ProductRepository extends BaseRepository {
             }
         });
         return productListMutableLiveData;
+    }
+    public boolean isNextPageAvailable(){
+        return current_page < last_page;
     }
 }

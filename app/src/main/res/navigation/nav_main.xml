@@ -38,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/catalog"
-        android:name="com.mustofa27.banksampah.view.fragment.EcatalogFragment"
+        android:name="com.mustofa27.banksampah.view.fragment.ProductFragment"
         android:label="@string/catalog"
         tools:layout="@layout/fragment_ecatalog">
         <action

@@ -86,7 +86,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                     productPriceHanya.setVisibility(View.GONE);
                     productPriceDiscount.setText(getMoneyFormat(tmp.getPrice()));
                 }
-                view.findViewById(R.id.beli).setOnClickListener(this.onClickItem(tmp));
+                view.findViewById(R.id.add_to_cart).setOnClickListener(this.onClickItem(tmp));
             }
 
             @Override

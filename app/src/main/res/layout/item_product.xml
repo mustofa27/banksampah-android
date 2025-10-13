@@ -8,7 +8,7 @@
     android:layout_margin="@dimen/spacing_medium">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:padding="@dimen/spacing_large"
         android:background="@color/neutral_1">
         <ImageView
@@ -83,24 +83,25 @@
             android:background="@color/neutral_4"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"/>
-        <TextView
-            android:id="@+id/beli"
+        <Button
+            android:id="@+id/add_to_cart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/spacing_large"
-            android:paddingRight="@dimen/spacing_large"
-            android:paddingBottom="@dimen/spacing_medium"
-            android:paddingTop="@dimen/spacing_medium"
             android:background="@drawable/rounded_primary"
-            android:fontFamily="@font/poppins_bold"
-            android:text="@string/beli"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="@dimen/text_size_very_small"
-            app:layout_constraintTop_toBottomOf="@id/line"
-            android:layout_marginTop="@dimen/spacing_medium"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/neutral_1"
             android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            android:textAllCaps="false"
+            android:paddingTop="@dimen/spacing_medium"
+            android:paddingBottom="@dimen/spacing_medium"
+            android:paddingRight="@dimen/spacing_large"
+            android:paddingLeft="@dimen/spacing_large"
+            android:textSize="@dimen/text_size_very_small"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            android:drawableLeft="@drawable/ic_cart_outline"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:drawableTint="@color/neutral_1"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

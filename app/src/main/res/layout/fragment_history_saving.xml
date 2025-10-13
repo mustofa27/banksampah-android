@@ -3,19 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/neutral_1">
+    android:background="@color/secondary_2">
     <HorizontalScrollView
         android:id="@+id/status_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         android:fillViewport="true"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        android:layout_marginTop="@dimen/spacing_small">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="@dimen/spacing_large"
+            android:paddingTop="@dimen/spacing_large"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large"
             android:background="@color/neutral_1">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/status_1"
@@ -176,8 +179,7 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/status_container"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="@dimen/spacing_medium">
+        app:layout_constraintBottom_toBottomOf="parent">
         <ProgressBar
             android:id="@+id/loading_next"
             android:layout_width="wrap_content"
@@ -188,9 +190,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_above="@id/loading_next"
             android:padding="@dimen/spacing_large"
-            android:background="@color/neutral_1"/>
+            android:background="@color/neutral_1" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
