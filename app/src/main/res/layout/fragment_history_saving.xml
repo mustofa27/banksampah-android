@@ -19,7 +19,8 @@
             android:paddingTop="@dimen/spacing_large"
             android:paddingLeft="@dimen/spacing_large"
             android:paddingRight="@dimen/spacing_large"
-            android:background="@color/neutral_1">
+            android:paddingBottom="@dimen/spacing_large"
+            android:background="@color/white">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/status_1"
                 android:layout_width="wrap_content"
@@ -192,7 +193,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/loading_next"
-            android:padding="@dimen/spacing_large"
+            android:padding="@dimen/spacing_medium"
             android:background="@color/neutral_1" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

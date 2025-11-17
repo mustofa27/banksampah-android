@@ -6,37 +6,37 @@ import androidx.lifecycle.LiveData;
 
 import com.mustofa27.banksampah.model.datasource.local.AppDatabase;
 import com.mustofa27.banksampah.model.datasource.network.BaseNetwork;
-import com.mustofa27.banksampah.model.entity.Garbage;
-import com.mustofa27.banksampah.model.entity.Saving;
+import com.mustofa27.banksampah.model.entity.Withdraw;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
 import com.mustofa27.banksampah.model.repository.GarbageRepository;
-import com.mustofa27.banksampah.model.repository.SavingRepository;
+import com.mustofa27.banksampah.model.repository.WithdrawRepository;
 
 import java.util.ArrayList;
 
 
-public class HistorySavingViewModel extends BaseViewModel {
+public class HistoryWithdrawViewModel extends BaseViewModel {
 
-    SavingRepository savingRepository;
-    LiveData<ArrayList<Saving>> savingLiveData;
+    WithdrawRepository withdrawRepository;
+    GarbageRepository garbageRepository;
+    LiveData<ArrayList<Withdraw>> withdrawLiveData;
     int page;
     boolean isNextPage = false;
 
-    public HistorySavingViewModel(Context context) {
-        savingRepository = SavingRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context),
+    public HistoryWithdrawViewModel(Context context) {
+        withdrawRepository = WithdrawRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context),
                 this, AppDatabase.getInstance(context));
         page = 1;
     }
-    public LiveData<ArrayList<Saving>> getSaving(){
-        savingLiveData = savingRepository.getData(page++);
+    public LiveData<ArrayList<Withdraw>> getWithdraw(){
+        withdrawLiveData = withdrawRepository.getData(page++);
         isNextPage = false;
-        return savingLiveData;
+        return withdrawLiveData;
     }
     public boolean isNextAvailable(){
-        return savingRepository.isNextPageAvailable();
+        return withdrawRepository.isNextPageAvailable();
     }
     public void getNextData() {
-        savingLiveData = savingRepository.getData(page++);
+        withdrawLiveData = withdrawRepository.getData(page++);
         isNextPage = true;
     }
     public boolean isNextPage() {

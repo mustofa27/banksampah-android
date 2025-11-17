@@ -45,7 +45,7 @@ public class HistoryFragment extends BaseFragment implements View.OnClickListene
         fragmentArrayList = new ArrayList<>();
         fragmentArrayList.add(HistorySavingFragment.newInstance());
         fragmentArrayList.add(HistorySavingFragment.newInstance());
-        fragmentArrayList.add(HistorySavingFragment.newInstance());
+        fragmentArrayList.add(HistoryWithdrawFragment.newInstance());
         titles = new ArrayList<>();
         titles.add(getContext().getString(R.string.riwayat_tab_title_1));
         titles.add(getContext().getString(R.string.riwayat_tab_title_2));

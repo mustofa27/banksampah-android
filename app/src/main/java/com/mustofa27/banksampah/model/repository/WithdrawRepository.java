@@ -69,9 +69,6 @@ public class WithdrawRepository extends BaseRepository {
                     vmRepoInterface.getStatus().setValue(false);
                 }
             });
-        } else{
-            vmRepoInterface.setMessage("Data tidak tersedia");
-            vmRepoInterface.getStatus().setValue(false);
         }
         return WithdrawListMutableLiveData;
     }

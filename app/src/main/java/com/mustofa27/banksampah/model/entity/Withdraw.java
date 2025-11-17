@@ -94,4 +94,7 @@ public class Withdraw {
     public void setUser(User user) {
         this.user = user;
     }
+    public String getStatusText() {
+        return status == 0 ? "Menunggu" : (status == 1 ? "Diterima" : "Ditolak");
+    }
 }

@@ -71,9 +71,6 @@ public class ProductRepository extends BaseRepository {
                     vmRepoInterface.getStatus().setValue(false);
                 }
             });
-        } else{
-            vmRepoInterface.setMessage("Data tidak tersedia");
-            vmRepoInterface.getStatus().setValue(false);
         }
         return productListMutableLiveData;
     }

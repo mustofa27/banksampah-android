@@ -72,9 +72,6 @@ public class SavingRepository extends BaseRepository {
                     vmRepoInterface.getStatus().setValue(false);
                 }
             });
-        } else{
-            vmRepoInterface.setMessage("Data tidak tersedia");
-            vmRepoInterface.getStatus().setValue(false);
         }
         return savingListMutableLiveData;
     }

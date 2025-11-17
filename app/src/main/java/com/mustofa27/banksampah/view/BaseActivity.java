@@ -22,6 +22,8 @@ import com.mustofa27.banksampah.R;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.NavOptions;
 
 
 import com.mustofa27.banksampah.model.helper.CustomActivityHelper;
@@ -37,6 +39,7 @@ public abstract class BaseActivity extends CustomActivityHelper {
     public static int SELECT_PRODUCT_CODE = 222;
     private Dialog progressDialog;
     ActivityResultLauncher<Intent> activityResultLaunch;
+    NavController navController;
 
     protected void showMessageSuccess(String message) {
         if(isStringNotEmpty(message)) {
@@ -165,5 +168,17 @@ public abstract class BaseActivity extends CustomActivityHelper {
         } else{
             dismissLoadingDialog();
         }
+    }
+
+    public void navigate(int route) {
+        NavOptions navOptions = new NavOptions.Builder()
+                .setLaunchSingleTop(true)
+                .setPopUpTo(R.id.navigation_dashboard, true)   // atau ganti R.id.navigation_dashboard
+                .build();
+        navController.navigate(route, null, navOptions);
+    }
+
+    public void setNavController(NavController navController) {
+        this.navController = navController;
     }
 }

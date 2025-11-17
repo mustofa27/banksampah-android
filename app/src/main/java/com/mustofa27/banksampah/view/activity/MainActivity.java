@@ -50,6 +50,7 @@ public class MainActivity extends BaseActivity {
         navHostFragment.getNavController().addOnDestinationChangedListener((controller, destination, arguments) -> {
             //binding.title.setText(destination.getLabel());
         });
+        setNavController(navHostFragment.getNavController());
         binding.save.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SaveActivity.class)));
         checkUpdate();
     }

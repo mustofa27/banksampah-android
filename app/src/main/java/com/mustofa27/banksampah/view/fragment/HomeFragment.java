@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,6 +25,7 @@ import com.mustofa27.banksampah.model.entity.Balance;
 import com.mustofa27.banksampah.model.entity.Garbage;
 import com.mustofa27.banksampah.model.entity.NewsClass;
 import com.mustofa27.banksampah.model.entity.Product;
+import com.mustofa27.banksampah.view.BaseActivity;
 import com.mustofa27.banksampah.view.BaseFragment;
 import com.mustofa27.banksampah.view.activity.NewsActivity;
 import com.mustofa27.banksampah.view.activity.WithdrawActivity;
@@ -34,9 +36,8 @@ import com.mustofa27.banksampah.viewmodel.BaseViewModel;
 import com.mustofa27.banksampah.viewmodel.CustomViewModelFactory;
 import com.mustofa27.banksampah.viewmodel.HomeViewModel;
 
-import java.text.NumberFormat;
+
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
@@ -138,6 +139,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
             intent.putExtra("saldo", balance);
             startActivity(intent);
         });
+        binding.lihatSemuaProduk.setOnClickListener(v -> ((BaseActivity)getActivity()).navigate(R.id.catalog));
         initObserver();
         return binding.getRoot();
     }
