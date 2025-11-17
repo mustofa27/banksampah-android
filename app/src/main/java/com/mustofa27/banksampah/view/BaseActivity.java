@@ -158,4 +158,12 @@ public abstract class BaseActivity extends CustomActivityHelper {
     public void setActivityResultLaunch(ActivityResultLauncher<Intent> activityResultLaunch) {
         this.activityResultLaunch = activityResultLaunch;
     }
+
+    protected void showDefaulLoading(boolean isLoading){
+        if(isLoading){
+            showLoadingDialog();
+        } else{
+            dismissLoadingDialog();
+        }
+    }
 }

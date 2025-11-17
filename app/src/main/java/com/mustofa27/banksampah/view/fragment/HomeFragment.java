@@ -20,11 +20,13 @@ import com.bumptech.glide.Glide;
 import com.mustofa27.banksampah.R;
 import com.mustofa27.banksampah.databinding.FragmentHomeBinding;
 import com.mustofa27.banksampah.model.datasource.network.ConnectionHandler;
+import com.mustofa27.banksampah.model.entity.Balance;
 import com.mustofa27.banksampah.model.entity.Garbage;
 import com.mustofa27.banksampah.model.entity.NewsClass;
 import com.mustofa27.banksampah.model.entity.Product;
 import com.mustofa27.banksampah.view.BaseFragment;
 import com.mustofa27.banksampah.view.activity.NewsActivity;
+import com.mustofa27.banksampah.view.activity.WithdrawActivity;
 import com.mustofa27.banksampah.view.adapter.AdapterCallback;
 import com.mustofa27.banksampah.view.adapter.BannerPromoAdapter;
 import com.mustofa27.banksampah.view.adapter.GenericRecyclerAdapter;
@@ -46,6 +48,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     ArrayList<Product> all;
     ArrayList<Garbage> garbageArrayList;
     GenericRecyclerAdapter productAdapter,sampahAdapter;
+    Balance balance;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -130,6 +133,11 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         binding.swipe.setOnRefreshListener(() -> {
             refreshSwipe();
         });
+        binding.withdraw.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), WithdrawActivity.class);
+            intent.putExtra("saldo", balance);
+            startActivity(intent);
+        });
         initObserver();
         return binding.getRoot();
     }
@@ -194,6 +202,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
     private void refreshSwipe(){
         viewModel.getMyBalance().observe(getViewLifecycleOwner(), balance -> {
+            this.balance = balance;
             binding.saldo.setText(getMoneyFormat(balance.getBalance()));
             viewModel.getMy().observe(getViewLifecycleOwner(), user -> {
                 binding.topbar.username.setText(user.getName());

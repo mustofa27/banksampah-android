@@ -27,6 +27,8 @@ public class BalanceRepository extends BaseRepository {
     public static BalanceRepository getInstance(BaseNetwork baseNetwork, SharedPreferenceHelper sharedPreferenceHelper, VMRepoInterface vmRepoInterface, AppDatabase db) {
         if (instance == null) {
             instance = new BalanceRepository(baseNetwork, sharedPreferenceHelper, vmRepoInterface, db);
+        } else{
+            instance.vmRepoInterface = vmRepoInterface;
         }
         return instance;
     }

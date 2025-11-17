@@ -24,6 +24,14 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup,label">
         <activity
+            android:name=".view.activity.WithdrawOptionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity
+            android:name=".view.activity.WithdrawActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity
             android:name=".view.activity.CartActivity"
             android:exported="false" />
         <activity

@@ -37,6 +37,8 @@ public class ProductRepository extends BaseRepository {
     public static ProductRepository getInstance(BaseNetwork baseNetwork, SharedPreferenceHelper sharedPreferenceHelper, VMRepoInterface vmRepoInterface, AppDatabase db) {
         if (instance == null) {
             instance = new ProductRepository(baseNetwork, sharedPreferenceHelper, vmRepoInterface, db);
+        } else{
+            instance.vmRepoInterface = vmRepoInterface;
         }
         instance.last_page = 0;
         return instance;

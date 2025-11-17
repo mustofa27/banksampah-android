@@ -1,6 +1,8 @@
 package com.mustofa27.banksampah.model.entity;
 
-public class Balance {
+import java.io.Serializable;
+
+public class Balance implements Serializable {
     private int id, user_id;
     private long balance;
     private String created_at, updated_at;

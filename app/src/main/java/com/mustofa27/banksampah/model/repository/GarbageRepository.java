@@ -32,6 +32,8 @@ public class GarbageRepository extends BaseRepository {
     public static GarbageRepository getInstance(BaseNetwork baseNetwork, SharedPreferenceHelper sharedPreferenceHelper, VMRepoInterface vmRepoInterface, AppDatabase db) {
         if (instance == null) {
             instance = new GarbageRepository(baseNetwork, sharedPreferenceHelper, vmRepoInterface, db);
+        } else{
+            instance.vmRepoInterface = vmRepoInterface;
         }
         return instance;
     }

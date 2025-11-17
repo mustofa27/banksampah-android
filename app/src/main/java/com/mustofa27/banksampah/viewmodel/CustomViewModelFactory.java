@@ -42,6 +42,10 @@ public class CustomViewModelFactory implements ViewModelProvider.Factory {
             return (T) new ProductViewModel(context);
         } else if (CartViewModel.class.equals(modelClass)) {
             return (T) new CartViewModel(context);
+        } else if (WithdrawViewModel.class.equals(modelClass)) {
+            return (T) new WithdrawViewModel(context);
+        } else if (WithdrawOptionViewModel.class.equals(modelClass)) {
+            return (T) new WithdrawOptionViewModel(context);
         } else{
             return (T) new UserViewModel(context);
         }

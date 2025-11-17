@@ -8,10 +8,16 @@
     <string name="email">Email</string>
     <string name="jenis_sampah">Jenis Sampah</string>
     <string name="berat_sampah">Berat Sampah (kg)</string>
+    <string name="jumlah_penarikan">Jumlah Penarikan</string>
     <string name="estimasi">Estimasi Harga</string>
+    <string name="jenis_penarikan">Jenis Penarikan</string>
+    <string name="pilih_jenis_penarikan">Pilih Jenis Penarikan</string>
+    <string name="estimasi_saldo">Total Saldo Terpakai</string>
+    <string name="saldo_tersedia">Saldo Tersedia</string>
     <string name="produk">Produk daur ulang sampah</string>
     <string name="tukar_sampah">Sampah yang bisa ditukar</string>
     <string name="simpan_message">Silahkan isi form berikut untuk mulai menyimpan sampah</string>
+    <string name="withdraw_message">Silahkan isi form berikut untuk melakukan penarikan saldo</string>
     <string name="beli">Beli Sekarang</string>
     <string name="tukar">Tukar Sekarang</string>
     <string name="saldo_anda">Saldo anda</string>
@@ -129,6 +135,7 @@
     <string name="date_until">Tanggal Selesai</string>
     <string name="kota_tujuan">Kota Tujuan</string>
     <string name="pilih">Pilih</string>
+    <string name="pilih_opsi">Pilih Opsi Ini</string>
     <string name="catalog">Catalog</string>
     <string name="product_catalog">Katalog produk hasil daur ulang sampah</string>
     <string name="pricelist">Pricelist</string>
