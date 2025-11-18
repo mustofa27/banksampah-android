@@ -61,7 +61,7 @@ public class Product implements Serializable {
         return price;
     }
 
-    public void setPrice(long price) {
+    public void setPrice(Long price) {
         this.price = price;
     }
 

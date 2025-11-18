@@ -27,6 +27,7 @@
     <string name="cpassword">Confirm Password</string>
     <string name="welcome">Selamat Datang</string>
     <string name="welcome_message">Silahkan login untuk akses aplikasi ini</string>
+    <string name="welcome_message_register">Silahkan mendaftar untuk akses aplikasi ini</string>
     <string name="otp_message">Silahkan isi email anda yang terdaftar pada aplikasi ini</string>
     <string name="reset_message">Silahkan isi data berikut ini</string>
     <string name="signin">Log In</string>
@@ -46,14 +47,14 @@
     <string name="billing">Billing</string>
     <string name="menu_bad">Bad Coverage</string>
     <string name="refresh">Refresh</string>
-    <string name="outletName">Nama Outlet</string>
+    <string name="name">Nama</string>
     <string name="distributor">Dist / Subdistributor</string>
     <string name="address">Alamat</string>
     <string name="city">City</string>
     <string name="outletType">Channel</string>
     <string name="outletPhoto">Outlet Photo</string>
     <string name="outletRank">Outlet Rank</string>
-    <string name="outletPhone">Kode Pos</string>
+    <string name="phone">Nomor Telepon</string>
     <string name="date">Tanggal</string>
     <string name="submit">Submit</string>
     <string name="upload">Upload</string>
@@ -62,7 +63,7 @@
     <string name="profile">Profile</string>
     <string name="about">About</string>
     <string name="brand">Competitor</string>
-    <string name="registerOutlet">Register Outlet Berhasil. Terima kasih</string>
+    <string name="register">Register</string>
     <string name="backToHome">Back to Home</string>
     <string name="getCoordinate">Koordinat</string>
     <string name="getNow">Cek Koordinat</string>

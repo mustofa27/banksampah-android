@@ -74,6 +74,39 @@ public class UserRepository extends BaseRepository {
             vmRepoInterface.getStatus().setValue(false);
         }
     }
+    public void register(String name, String username, String password, String password_confirm, String phone){
+        // handle login
+        try {
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("name", name);
+            jsonObject.put("email", username);
+            jsonObject.put("password", password);
+            jsonObject.put("password_confirmation", password_confirm);
+            jsonObject.put("phone_number", phone);
+            dataSource.Connect(ConnectionHandler.post_method, "auth/register", jsonObject, new NetworkCallback() {
+                @Override
+                public void onFinish() {
+
+                }
+
+                @Override
+                public void onSuccess(Result result) {
+                    sharedPreferenceHelper.setPreference(UserToken.table, ((Result.Success)result).getData().toString());
+                    vmRepoInterface.setMessage(result.toString());
+                    vmRepoInterface.getStatus().setValue(true);
+                }
+
+                @Override
+                public void onError(Result result) {
+                    vmRepoInterface.setMessage(result.toString());
+                    vmRepoInterface.getStatus().setValue(false);
+                }
+            });
+        } catch (JSONException e){
+            vmRepoInterface.setMessage(e.getMessage());
+            vmRepoInterface.getStatus().setValue(false);
+        }
+    }
 
     public MutableLiveData<User> me(){
         if(userMutableLiveData.getValue() == null) {

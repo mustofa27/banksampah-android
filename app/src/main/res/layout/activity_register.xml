@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/iv_size_takePhoto"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="@dimen/spacing_xlarge"
             android:src="@drawable/logo"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitCenter"/>
@@ -34,7 +34,7 @@
             android:orientation="vertical"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/spacing_xxxlarge">
+            android:layout_marginTop="@dimen/spacing_large">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -47,17 +47,38 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/spacing_large"
-                android:text="@string/welcome_message"
+                android:text="@string/welcome_message_register"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/text_size_very_small"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:text="@string/name"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/spacing_large"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/input_round_border"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:paddingTop="@dimen/spacing_xmedium"
+                android:paddingBottom="@dimen/spacing_xmedium"
+                android:hint="@string/name" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/spacing_medium"
                 android:text="@string/username"
-                android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/spacing_large"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/username"
@@ -73,6 +94,27 @@
                 android:paddingTop="@dimen/spacing_xmedium"
                 android:paddingBottom="@dimen/spacing_xmedium"
                 android:hint="@string/username" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:text="@string/phone"
+                android:textColor="@android:color/black" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/input_round_border"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:paddingTop="@dimen/spacing_xmedium"
+                android:paddingBottom="@dimen/spacing_xmedium"
+                android:hint="@string/phone" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,6 +138,28 @@
                 android:paddingBottom="@dimen/spacing_xmedium"
                 android:hint="@string/password"
                 android:inputType="textPassword"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:text="@string/cpassword"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/input_round_border"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:paddingTop="@dimen/spacing_xmedium"
+                android:paddingBottom="@dimen/spacing_xmedium"
+                android:hint="@string/cpassword"
+                android:inputType="textPassword"/>
 
             <TextView
                 android:id="@+id/forgot"
@@ -109,7 +173,7 @@
                 android:visibility="gone"/>
 
             <Button
-                android:id="@+id/signin"
+                android:id="@+id/register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_large"
@@ -118,17 +182,10 @@
                 android:layout_marginBottom="@dimen/spacing_large"
                 android:background="@drawable/rounded_primary"
                 android:fontFamily="@font/poppins_bold"
-                android:text="@string/signin"
+                android:text="@string/register"
                 android:textColor="@android:color/white"
                 android:textStyle="bold" />
-            <TextView
-                android:id="@+id/register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="@string/register"
-                android:textColor="@color/primary_3"
-                android:textSize="@dimen/text_size"/>
+
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

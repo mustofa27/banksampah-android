@@ -24,8 +24,6 @@ public class CustomViewModelFactory implements ViewModelProvider.Factory {
             return (T) new NewsViewModel(context);
         } else if (CheckoutViewModel.class.equals(modelClass)) {
             return (T) new CheckoutViewModel(context);
-        } else if (TakeOrderViewModel.class.equals(modelClass)) {
-            return (T) new TakeOrderViewModel(context);
         } else if (ProductSearchViewModel.class.equals(modelClass)) {
             return (T) new ProductSearchViewModel(context);
         } else if (HistoryViewModel.class.equals(modelClass)) {

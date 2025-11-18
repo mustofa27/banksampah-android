@@ -25,6 +25,10 @@ public class UserViewModel extends BaseViewModel {
         loading.setValue(true);
         userRepository.login(username, password, fcmId);
     }
+    public void register(String name, String username, String password, String password_confirm, String phone){
+        loading.setValue(true);
+        userRepository.register(name, username, password, password_confirm, phone);
+    }
 
     public void ResetVMRepoInterface(){
         userRepository.ResetVMRepoInterface(this);

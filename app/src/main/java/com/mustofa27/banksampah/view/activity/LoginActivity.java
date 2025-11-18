@@ -30,6 +30,10 @@ public class LoginActivity extends BaseActivity {
         binding.signin.setOnClickListener(v -> {
             viewModel.login(binding.username.getText().toString(), binding.password.getText().toString(), tempIDFCM.getToken());
         });
+        binding.register.setOnClickListener(v -> {
+            startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+            finish();
+        });
         initObserver();
     }
 

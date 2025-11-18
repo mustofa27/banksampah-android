@@ -24,17 +24,25 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup,label">
         <activity
+            android:name=".view.activity.PaymentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".view.activity.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
             android:name=".view.activity.WithdrawOptionActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name=".view.activity.WithdrawActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name=".view.activity.CartActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name=".view.activity.SaveActivity"
             android:exported="false"
