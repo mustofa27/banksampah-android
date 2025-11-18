@@ -1,5 +1,6 @@
 package com.mustofa27.banksampah.view.fragment;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 
@@ -23,6 +24,7 @@ import com.mustofa27.banksampah.model.datasource.network.ConnectionHandler;
 import com.mustofa27.banksampah.model.entity.Product;
 import com.mustofa27.banksampah.model.entity.Saving;
 import com.mustofa27.banksampah.view.BaseFragment;
+import com.mustofa27.banksampah.view.activity.CartActivity;
 import com.mustofa27.banksampah.view.adapter.AdapterCallback;
 import com.mustofa27.banksampah.view.adapter.GenericRecyclerAdapter;
 import com.mustofa27.banksampah.viewmodel.BaseViewModel;
@@ -44,6 +46,7 @@ public class ProductFragment extends BaseFragment {
     GenericRecyclerAdapter productAdapter;
     ArrayList<Product> products;
     boolean isLoadingNext = false;
+    boolean addToCartFlag = false;
     public ProductFragment() {
         // Required empty public constructor
     }
@@ -70,12 +73,12 @@ public class ProductFragment extends BaseFragment {
                 Glide.with(getContext()).load(ConnectionHandler.IMAGE_URL + tmp.getImage_path()).
                         placeholder(R.drawable.icons8_no_image).error(R.drawable.icons8_no_image).centerCrop().into(imageView);
                 productName.setText(tmp.getName());
-                if(!tmp.getDiscounts().isEmpty()){
+                if(tmp.getValidDiscount() != null){
                     productPrice.setVisibility(View.VISIBLE);
                     productPriceHanya.setVisibility(View.VISIBLE);
                     productPrice.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
                     productPrice.setText(getMoneyFormat(tmp.getPrice()));
-                    productPriceDiscount.setText(getMoneyFormat((100-tmp.getDiscounts().get(0).getPercentage()) * tmp.getPrice()/100));
+                    productPriceDiscount.setText(getMoneyFormat((100-tmp.getValidDiscount().getPercentage()) * tmp.getPrice()/100));
                 } else{
                     productPrice.setVisibility(View.GONE);
                     productPriceHanya.setVisibility(View.GONE);
@@ -86,7 +89,10 @@ public class ProductFragment extends BaseFragment {
 
             @Override
             public View.OnClickListener onClickItem(Object object) {
-                return null;
+                return v -> {
+                    addToCartFlag = true;
+                    viewModel.addToCart(((Product) object).getId());
+                };
             }
         });
     }
@@ -116,6 +122,7 @@ public class ProductFragment extends BaseFragment {
                 }
             }
         });
+        binding.cartContainer.setOnClickListener(v -> startActivity(new Intent(getContext(), CartActivity.class)));
         initObserver();
         return binding.getRoot();
     }
@@ -143,8 +150,12 @@ public class ProductFragment extends BaseFragment {
         viewModel.getStatus().observe(getViewLifecycleOwner(), status -> {
             viewModel.getLoading().setValue(false);
             binding.loadingNext.setVisibility(View.GONE);
-            if(!status && !viewModel.isNextPage()) {
+            if(!status && !viewModel.isNextPage() || addToCartFlag) {
                 showMessage(status);
+                if(addToCartFlag){
+                    viewModel.getCart();
+                }
+                addToCartFlag = false;
             } else{
                 if(viewModel.isNextPage()){
                     viewModel.setPage(viewModel.getPage()+1);
@@ -169,6 +180,10 @@ public class ProductFragment extends BaseFragment {
             } else{
                 productAdapter.notifyItemInserted(tmp);
             }
+        });
+        viewModel.getCart().observe(getActivity(), cartItems -> {
+            binding.indicator.setText("" + cartItems.size());
+            binding.indicator.setVisibility(cartItems.size() > 0 ? View.VISIBLE : View.GONE);
         });
     }
 }

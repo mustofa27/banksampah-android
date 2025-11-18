@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".view.activity.CartActivity">
     <include
-        layout="@layout/text_back_icon_order_topbar"
+        layout="@layout/main_topbar"
         android:id="@+id/topbar"/>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottom_content"
@@ -34,14 +34,31 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
         <TextView
+            android:id="@+id/saldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Saldo Tersedia: "/>
+        <CheckBox
+            android:id="@+id/check_saldo"
+            app:layout_constraintTop_toBottomOf="@id/saldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/gunakan_saldo"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/black"/>
+        <TextView
             android:id="@+id/total_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             android:textColor="@color/neutral_6"
-            android:textSize="@dimen/text_size_small"
+            android:textSize="@dimen/text_size_medium"
             android:text="@string/total_harga"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_saldo"
             app:layout_constraintRight_toLeftOf="@id/checkout"
             android:layout_marginRight="@dimen/spacing_medium"/>
         <TextView
@@ -50,7 +67,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             android:textColor="@color/red_300"
-            android:textSize="@dimen/text_size_medium"
+            android:textSize="@dimen/text_size"
             android:text="Rp 0"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/total_title"

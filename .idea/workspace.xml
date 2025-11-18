@@ -94,6 +94,11 @@
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_garbage.xml">
         <config>
           <theme>@style/AppTheme</theme>
@@ -110,6 +115,11 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_promos.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/main_topbar.xml">
         <config>
           <theme>@style/AppTheme</theme>
         </config>
@@ -167,10 +177,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1390b1b-c4dd-4cb1-b2ae-adfaa55f1650" name="Default Changelist" comment="Flow ajukan pencairan done">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/HistoryWithdrawFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/HistoryWithdrawViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/withdraw_item_list.xml" afterDir="false" />
+    <list default="true" id="f1390b1b-c4dd-4cb1-b2ae-adfaa55f1650" name="Default Changelist" comment="Added:&#10;1. Cart flow&#10;2. Checkout Flow&#10;3. History Transaksi">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/entity/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/entity/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/entity/TransactionItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/repository/CartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/HistoryTransactionFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/HistoryTransactionViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/border_neutral_300_neutral_100.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/border_neutral_300_neutral_200.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -179,18 +196,25 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/entity/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/entity/Withdraw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/repository/SavingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/repository/SavingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/repository/WithdrawRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/repository/WithdrawRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/BaseActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/entity/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/entity/Discount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/model/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/activity/CartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/activity/CartActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/activity/SaveActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/activity/SaveActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/HistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/HistoryFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/ProductFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/ProductFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/CartViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/CartViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/CustomViewModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/CustomViewModelFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/HistorySavingViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/HistorySavingViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/HistoryViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/HistoryViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/HomeViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/HomeViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/ProductViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/ProductViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/SavingViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel/SavingViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_saving.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_saving.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/saving_item_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/saving_item_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/withdraw_item_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/withdraw_item_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,8 +265,8 @@
         <option value="Interface" />
         <option value="Kotlin Class" />
         <option value="resourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -308,7 +332,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/danapadanan2024/Documents/Private Project/banksampah/app/src/main/res/drawable",
-    "last_opened_file_path": "/Users/danapadanan2024/Documents/Private Project/banksampah/app/src/main/res/layout",
+    "last_opened_file_path": "/Users/danapadanan2024/Documents/Private Project/banksampah/app/src/main/res/drawable",
     "recommended.upgrade.last.time.stamp": "1678856852834",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   },
@@ -357,8 +381,8 @@
       <recent name="com.qiratekindo.pmpsales.view.activity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mustofa27.banksampah.viewmodel" />
       <recent name="com.mustofa27.banksampah.view.fragment" />
+      <recent name="com.mustofa27.banksampah.viewmodel" />
       <recent name="com.mustofa27.banksampah.model.repository" />
       <recent name="com.mustofa27.banksampah.model.entity" />
       <recent name="com.mustofa27.banksampah.model.datasource.local" />
@@ -370,8 +394,8 @@
       <recent name="com.qiratekindo.pmpsales.view.activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/color" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/viewmodel" />
       <recent name="$PROJECT_DIR$/app/src/main/res/navigation" />
@@ -555,7 +579,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763367050780</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="History withdraw done">
+      <option name="closed" value="true" />
+      <created>1763378296199</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1763378296199</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -578,7 +610,9 @@
     <MESSAGE value="Menu catalog done" />
     <MESSAGE value="Entity preparation for withdraw feature" />
     <MESSAGE value="Flow ajukan pencairan done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Flow ajukan pencairan done" />
+    <MESSAGE value="History withdraw done" />
+    <MESSAGE value="Added:&#10;1. Cart flow&#10;2. Checkout Flow&#10;3. History Transaksi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;1. Cart flow&#10;2. Checkout Flow&#10;3. History Transaksi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1020,7 +1054,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/HomeFragment.java</url>
-          <line>150</line>
+          <line>158</line>
           <option name="timeStamp" value="299" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
@@ -1145,7 +1179,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mustofa27/banksampah/view/fragment/HomeFragment.java</url>
-          <line>139</line>
+          <line>146</line>
           <option name="timeStamp" value="345" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1172,12 +1206,12 @@
       <map>
         <entry key="com.mustofa27.banksampah">
           <value>
-            <CheckInfo lastCheckTimestamp="1763347733828" />
+            <CheckInfo lastCheckTimestamp="1763464030472" />
           </value>
         </entry>
         <entry key="com.mustofa27.banksampah.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1763347733830" />
+            <CheckInfo lastCheckTimestamp="1763464030471" />
           </value>
         </entry>
         <entry key="com.qiratek.rnpsales">

@@ -5,6 +5,7 @@ import static android.view.View.VISIBLE;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -46,6 +47,7 @@ public class SaveActivity extends BaseActivity {
         binding = ActivitySaveBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.topbar.title.setText("Simpan Sampah");
+        binding.topbar.back.setOnClickListener(v -> finish());
         garbageArrayList = new ArrayList<>();
         garbageArrayAdapter = new ArrayAdapter(this, R.layout.custom_spinner, garbageArrayList);
         binding.jenisSampah.setAdapter(garbageArrayAdapter);
@@ -60,6 +62,7 @@ public class SaveActivity extends BaseActivity {
 
             }
         });
+        binding.topbar.cartContainer.setOnClickListener(v -> startActivity(new Intent(this, CartActivity.class)));
         progressDialog = new ProgressDialog(this);
         progressDialog.setCancelable(false);
         progressDialog.setTitle("Processing");
@@ -127,6 +130,14 @@ public class SaveActivity extends BaseActivity {
             garbageArrayList.addAll(garbages);
             garbageArrayAdapter.notifyDataSetChanged();
             showLoading(false);
+        });
+        viewModel.getCart().observe(this, carts -> {
+            if(carts.size() > 0){
+                binding.topbar.indicator.setText(String.valueOf(carts.size()));
+                binding.topbar.indicator.setVisibility(VISIBLE);
+            } else{
+                binding.topbar.indicator.setVisibility(GONE);
+            }
         });
     }
 }

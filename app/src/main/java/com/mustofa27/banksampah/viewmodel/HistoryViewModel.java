@@ -5,6 +5,12 @@ import android.widget.PopupWindow;
 
 import androidx.lifecycle.LiveData;
 
+import com.mustofa27.banksampah.model.datasource.local.AppDatabase;
+import com.mustofa27.banksampah.model.datasource.network.BaseNetwork;
+import com.mustofa27.banksampah.model.entity.Cart;
+import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
+import com.mustofa27.banksampah.model.repository.CartRepository;
+
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -12,18 +18,15 @@ import java.util.ArrayList;
 
 public class HistoryViewModel extends BaseViewModel {
 
-    PopupWindow popupWindow;
 
+    LiveData<ArrayList<Cart>> cartLiveData;
+    CartRepository cartRepository;
     public HistoryViewModel(Context context) {
-//        billingRepository = BillingRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
-//                AppDatabase.getInstance(context));
+        cartRepository = CartRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
+                AppDatabase.getInstance(context));
     }
-
-    public PopupWindow getPopupWindow() {
-        return popupWindow;
-    }
-
-    public void setPopupWindow(PopupWindow popupWindow) {
-        this.popupWindow = popupWindow;
+    public LiveData<ArrayList<Cart>> getCart(){
+        cartLiveData = cartRepository.getData();
+        return cartLiveData;
     }
 }

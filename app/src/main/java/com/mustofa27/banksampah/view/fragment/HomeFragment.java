@@ -1,5 +1,8 @@
 package com.mustofa27.banksampah.view.fragment;
 
+import static android.view.View.GONE;
+import static android.view.View.VISIBLE;
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Paint;
@@ -27,6 +30,7 @@ import com.mustofa27.banksampah.model.entity.NewsClass;
 import com.mustofa27.banksampah.model.entity.Product;
 import com.mustofa27.banksampah.view.BaseActivity;
 import com.mustofa27.banksampah.view.BaseFragment;
+import com.mustofa27.banksampah.view.activity.CartActivity;
 import com.mustofa27.banksampah.view.activity.NewsActivity;
 import com.mustofa27.banksampah.view.activity.WithdrawActivity;
 import com.mustofa27.banksampah.view.adapter.AdapterCallback;
@@ -50,7 +54,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     ArrayList<Garbage> garbageArrayList;
     GenericRecyclerAdapter productAdapter,sampahAdapter;
     Balance balance;
-
+    boolean addToCartFlag = false;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -79,15 +83,15 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 Glide.with(getContext()).load(ConnectionHandler.IMAGE_URL + tmp.getImage_path()).
                         placeholder(R.drawable.icons8_no_image).error(R.drawable.icons8_no_image).centerCrop().into(imageView);
                 productName.setText(tmp.getName());
-                if(!tmp.getDiscounts().isEmpty()){
-                    productPrice.setVisibility(View.VISIBLE);
-                    productPriceHanya.setVisibility(View.VISIBLE);
+                if(tmp.getValidDiscount() != null){
+                    productPrice.setVisibility(VISIBLE);
+                    productPriceHanya.setVisibility(VISIBLE);
                     productPrice.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
                     productPrice.setText(getMoneyFormat(tmp.getPrice()));
-                    productPriceDiscount.setText(getMoneyFormat((100-tmp.getDiscounts().get(0).getPercentage()) * tmp.getPrice()/100));
+                    productPriceDiscount.setText(getMoneyFormat((100-tmp.getValidDiscount().getPercentage()) * tmp.getPrice()/100));
                 } else{
-                    productPrice.setVisibility(View.GONE);
-                    productPriceHanya.setVisibility(View.GONE);
+                    productPrice.setVisibility(GONE);
+                    productPriceHanya.setVisibility(GONE);
                     productPriceDiscount.setText(getMoneyFormat(tmp.getPrice()));
                 }
                 view.findViewById(R.id.add_to_cart).setOnClickListener(this.onClickItem(tmp));
@@ -95,7 +99,10 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
             @Override
             public View.OnClickListener onClickItem(Object object) {
-                return null;
+                return v -> {
+                    addToCartFlag = true;
+                    viewModel.addToCart(((Product) object).getId());
+                };
             }
         });
         sampahAdapter = new GenericRecyclerAdapter(garbageArrayList, R.layout.item_garbage, new AdapterCallback() {
@@ -139,6 +146,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
             intent.putExtra("saldo", balance);
             startActivity(intent);
         });
+        binding.topbar.cartContainer.setOnClickListener(v -> startActivity(new Intent(getContext(), CartActivity.class)));
         binding.lihatSemuaProduk.setOnClickListener(v -> ((BaseActivity)getActivity()).navigate(R.id.catalog));
         initObserver();
         return binding.getRoot();
@@ -153,16 +161,6 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         }
     }
 
-    private void refreshData(){
-        viewModel.getLoading().setValue(true);
-        viewModel.getAllProduct().observe(this, products -> {
-
-        });
-    }
-
-    private void removeObservers(){
-        viewModel.getProductLiveData().removeObservers(this);
-    }
 
     @Override
     protected BaseViewModel getViewModel() {
@@ -192,8 +190,12 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     protected void initObserver() {
         viewModel.getStatus().observe(getViewLifecycleOwner(), status -> {
             viewModel.getLoading().setValue(false);
-            if(!status) {
+            if(!status || addToCartFlag) {
                 showMessage(status);
+                if(addToCartFlag){
+                    viewModel.getCart();
+                }
+                addToCartFlag = false;
             }
         });
         viewModel.getLoading().observe(getViewLifecycleOwner(), loading -> {
@@ -230,10 +232,18 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                             }
                             garbageArrayList.addAll(garbages);
                             sampahAdapter.notifyDataSetChanged();
-                            showLoading(false);
-                            if(binding.swipe.isRefreshing()){
-                                binding.swipe.setRefreshing(false);
-                            }
+                            viewModel.getCart().observe(getViewLifecycleOwner(), carts -> {
+                                if(carts.size() > 0){
+                                    binding.topbar.indicator.setText(String.valueOf(carts.size()));
+                                    binding.topbar.indicator.setVisibility(VISIBLE);
+                                } else{
+                                    binding.topbar.indicator.setVisibility(GONE);
+                                }
+                                showLoading(false);
+                                if(binding.swipe.isRefreshing()){
+                                    binding.swipe.setRefreshing(false);
+                                }
+                            });
                         });
                     });
                 });

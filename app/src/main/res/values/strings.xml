@@ -9,6 +9,7 @@
     <string name="jenis_sampah">Jenis Sampah</string>
     <string name="berat_sampah">Berat Sampah (kg)</string>
     <string name="jumlah_penarikan">Jumlah Penarikan</string>
+    <string name="gunakan_saldo">Gunakan Saldo</string>
     <string name="estimasi">Estimasi Harga</string>
     <string name="jenis_penarikan">Jenis Penarikan</string>
     <string name="pilih_jenis_penarikan">Pilih Jenis Penarikan</string>
@@ -111,6 +112,7 @@
     <string name="rooted_notif">Aplikasi ini tidak dapat dipakai karena HP anda terdeteksi sudah di root.</string>
     <string name="fakegps_notif">Aplikasi ini tidak dapat dipakai karena di HP anda terpasang aplikasi fake gps.</string>
     <string name="message_must_fill">Pastikan semua isian telah terisi</string>
+    <string name="message_bayar">Segera lakukan pembayaran</string>
     <string name="message_upload_fail">Data gagal terupload karena </string>
     <string name="status_presence">Status Presence</string>
     <string name="status_outlet">Status Outlet</string>
@@ -118,7 +120,7 @@
     <string name="status_order">Status Order</string>
     <string name="contact_us">Hubungi Kami</string>
     <string name="faq">FAQ</string>
-    <string name="total_harga">Total Harga</string>
+    <string name="total_harga">Total Harus Dibayar</string>
     <string name="tambah_produk">Tambah</string>
     <string name="add_to_cart">Masukkan Keranjang</string>
     <string name="checkout">Lanjutkan Pembelian</string>
@@ -172,4 +174,5 @@
     <string name="status_0_saving">Menunggu</string>
     <string name="status_1_saving">Diterima</string>
     <string name="status_2_saving">Ditolak</string>
+    <string name="status_3_saving">Selesai</string>
 </resources>

@@ -20,6 +20,7 @@ import com.mustofa27.banksampah.R;
 import com.mustofa27.banksampah.databinding.FormPersonalizeBinding;
 import com.mustofa27.banksampah.databinding.FragmentHistoryBinding;
 import com.mustofa27.banksampah.view.BaseFragment;
+import com.mustofa27.banksampah.view.activity.CartActivity;
 import com.mustofa27.banksampah.view.adapter.CustomFragmentPagerAdapter;
 import com.mustofa27.banksampah.viewmodel.BaseViewModel;
 import com.mustofa27.banksampah.viewmodel.CustomViewModelFactory;
@@ -44,7 +45,7 @@ public class HistoryFragment extends BaseFragment implements View.OnClickListene
         viewModel = new ViewModelProvider(this, new CustomViewModelFactory(getContext())).get(HistoryViewModel.class);
         fragmentArrayList = new ArrayList<>();
         fragmentArrayList.add(HistorySavingFragment.newInstance());
-        fragmentArrayList.add(HistorySavingFragment.newInstance());
+        fragmentArrayList.add(HistoryTransactionFragment.newInstance());
         fragmentArrayList.add(HistoryWithdrawFragment.newInstance());
         titles = new ArrayList<>();
         titles.add(getContext().getString(R.string.riwayat_tab_title_1));
@@ -65,6 +66,7 @@ public class HistoryFragment extends BaseFragment implements View.OnClickListene
         binding.tab2.setOnClickListener(this);
         binding.tab3.setOnClickListener(this);
         binding.tab1.setActivated(true);
+        binding.cartContainer.setOnClickListener(v -> startActivity(new Intent(getContext(), CartActivity.class)));
         initObserver();
         return binding.getRoot();
     }
@@ -93,10 +95,10 @@ public class HistoryFragment extends BaseFragment implements View.OnClickListene
             viewModel.getLoading().setValue(false);
         });
         viewModel.getLoading().observe(getViewLifecycleOwner(), this::showLoading);
-//        viewModel.getCartItem().observe(getActivity(), cartItems -> {
-//            binding.indicator.setText("" + cartItems.size());
-//            binding.indicator.setVisibility(cartItems.size() > 0 ? View.VISIBLE : View.GONE);
-//        });
+        viewModel.getCart().observe(getActivity(), cartItems -> {
+            binding.indicator.setText("" + cartItems.size());
+            binding.indicator.setVisibility(cartItems.size() > 0 ? View.VISIBLE : View.GONE);
+        });
     }
 
     @Override

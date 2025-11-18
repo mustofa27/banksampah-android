@@ -6,49 +6,44 @@ import androidx.lifecycle.LiveData;
 
 import com.mustofa27.banksampah.model.datasource.local.AppDatabase;
 import com.mustofa27.banksampah.model.datasource.network.BaseNetwork;
-import com.mustofa27.banksampah.model.entity.Saving;
+import com.mustofa27.banksampah.model.entity.Balance;
+import com.mustofa27.banksampah.model.entity.Cart;
+import com.mustofa27.banksampah.model.entity.Transaction;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
-import com.mustofa27.banksampah.model.repository.GarbageRepository;
-import com.mustofa27.banksampah.model.repository.SavingRepository;
+import com.mustofa27.banksampah.model.repository.BalanceRepository;
+import com.mustofa27.banksampah.model.repository.CartRepository;
+import com.mustofa27.banksampah.model.repository.TransactionRepository;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
 
 public class CartViewModel extends BaseViewModel {
 
-    SavingRepository savingRepository;
-    GarbageRepository garbageRepository;
-    LiveData<ArrayList<Saving>> savingLiveData;
-    int page;
-    boolean isNextPage = false;
+
+    LiveData<ArrayList<Cart>> cartLiveData;
+    CartRepository cartRepository;
+    TransactionRepository transactionRepository;
+    BalanceRepository balanceRepository;
 
     public CartViewModel(Context context) {
-        savingRepository = SavingRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context),
-                this, AppDatabase.getInstance(context));
-        garbageRepository = GarbageRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context),
-                this, AppDatabase.getInstance(context));
-        page = 1;
+        cartRepository = CartRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
+                AppDatabase.getInstance(context));
+        transactionRepository = TransactionRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
+                AppDatabase.getInstance(context));
+        balanceRepository = BalanceRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
+                AppDatabase.getInstance(context));
     }
-    public LiveData<ArrayList<Saving>> getSaving(){
-        savingLiveData = savingRepository.getData(page++);
-        isNextPage = false;
-        return savingLiveData;
-    }
-    public boolean isNextAvailable(){
-        return savingRepository.isNextPageAvailable();
-    }
-    public void getNextData() {
-        savingLiveData = savingRepository.getData(page++);
-        isNextPage = true;
-    }
-    public boolean isNextPage() {
-        return isNextPage;
-    }
-    public int getPage() {
-        return page;
+    public LiveData<ArrayList<Cart>> getCart(){
+        cartLiveData = cartRepository.getData();
+        return cartLiveData;
     }
 
-    public void setPage(int page) {
-        this.page = page;
+    public LiveData<Transaction> checkout(JSONObject jsonObject){
+        return transactionRepository.addTransaction(jsonObject);
+    }
+    public LiveData<Balance> getBalance(){
+        return balanceRepository.getMyBalance();
     }
 }

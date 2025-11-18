@@ -173,6 +173,45 @@
                     android:visibility="gone"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/status_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:paddingTop="@dimen/spacing_medium"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:background="@drawable/rounded_riwayat_status"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/txt_status_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold"
+                    android:textColor="@color/riwayat_status_text_color"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="@string/status_3_saving"/>
+                <ImageView
+                    android:id="@+id/icon_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_check_active"
+                    app:layout_constraintTop_toTopOf="@id/txt_status_5"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_status_5"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintRight_toLeftOf="@id/txt_status_5"
+                    android:layout_marginRight="@dimen/spacing_medium"
+                    android:visibility="gone"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </HorizontalScrollView>
     <RelativeLayout

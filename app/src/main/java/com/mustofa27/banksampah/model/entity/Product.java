@@ -141,4 +141,12 @@ public class Product implements Serializable {
     public void setImage_path(String image_path) {
         this.image_path = image_path;
     }
+    public Discount getValidDiscount(){
+        for(Discount discount: discounts){
+            if(discount.isValid()){
+                return discount;
+            }
+        }
+        return null;
+    }
 }

@@ -8,12 +8,14 @@ import androidx.lifecycle.LiveData;
 import com.mustofa27.banksampah.model.datasource.local.AppDatabase;
 import com.mustofa27.banksampah.model.datasource.network.BaseNetwork;
 import com.mustofa27.banksampah.model.entity.Balance;
+import com.mustofa27.banksampah.model.entity.Cart;
 import com.mustofa27.banksampah.model.entity.Garbage;
 import com.mustofa27.banksampah.model.entity.NewsClass;
 import com.mustofa27.banksampah.model.entity.Product;
 import com.mustofa27.banksampah.model.entity.User;
 import com.mustofa27.banksampah.model.helper.SharedPreferenceHelper;
 import com.mustofa27.banksampah.model.repository.BalanceRepository;
+import com.mustofa27.banksampah.model.repository.CartRepository;
 import com.mustofa27.banksampah.model.repository.GarbageRepository;
 import com.mustofa27.banksampah.model.repository.NewsRepository;
 import com.mustofa27.banksampah.model.repository.ProductRepository;
@@ -28,8 +30,10 @@ public class HomeViewModel extends BaseViewModel {
     ProductRepository productRepository;
     GarbageRepository garbageRepository;
     BalanceRepository balanceRepository;
+    CartRepository cartRepository;
     LiveData<ArrayList<Product>> productLiveData;
     LiveData<ArrayList<Garbage>> garbageLiveData;
+    LiveData<ArrayList<Cart>> cartLiveData;
     LiveData<Balance> balanceLiveData;
     LiveData<User> userLiveData;
     NewsRepository newsRepository;
@@ -45,6 +49,8 @@ public class HomeViewModel extends BaseViewModel {
         garbageRepository = GarbageRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
                 AppDatabase.getInstance(context));
         balanceRepository = BalanceRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
+                AppDatabase.getInstance(context));
+        cartRepository = CartRepository.getInstance(BaseNetwork.getInstance(context), SharedPreferenceHelper.getInstance(context), this,
                 AppDatabase.getInstance(context));
     }
 
@@ -62,6 +68,15 @@ public class HomeViewModel extends BaseViewModel {
     public LiveData<ArrayList<Garbage>> getAllGarbage(){
         garbageLiveData = garbageRepository.getAllGarbage();
         return garbageLiveData;
+    }
+    public LiveData<ArrayList<Cart>> getCart(){
+        cartLiveData = cartRepository.getData();
+        return cartLiveData;
+    }
+
+    public void addToCart(int product_id){
+        loading.setValue(true);
+        cartRepository.addCart(product_id);
     }
 
     public LiveData<User> getMy(){
