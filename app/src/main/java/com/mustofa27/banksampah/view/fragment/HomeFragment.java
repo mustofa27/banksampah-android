@@ -32,6 +32,7 @@ import com.mustofa27.banksampah.view.BaseActivity;
 import com.mustofa27.banksampah.view.BaseFragment;
 import com.mustofa27.banksampah.view.activity.CartActivity;
 import com.mustofa27.banksampah.view.activity.NewsActivity;
+import com.mustofa27.banksampah.view.activity.SaveActivity;
 import com.mustofa27.banksampah.view.activity.WithdrawActivity;
 import com.mustofa27.banksampah.view.adapter.AdapterCallback;
 import com.mustofa27.banksampah.view.adapter.BannerPromoAdapter;
@@ -122,7 +123,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
             @Override
             public View.OnClickListener onClickItem(Object object) {
-                return null;
+                return v -> startActivity(new Intent(getActivity(), SaveActivity.class));
             }
         });
     }
