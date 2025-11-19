@@ -124,4 +124,10 @@ public class HistoryFragment extends BaseFragment implements View.OnClickListene
                 break;
         }
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        viewModel.getCart();
+    }
 }

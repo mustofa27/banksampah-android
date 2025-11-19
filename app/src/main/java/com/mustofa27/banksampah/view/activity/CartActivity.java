@@ -3,6 +3,7 @@ package com.mustofa27.banksampah.view.activity;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.text.Editable;
@@ -175,6 +176,9 @@ public class CartActivity extends BaseActivity {
                     jsonObject.put("orders", orders);
                     submitFlag = true;
                     viewModel.checkout(jsonObject).observe(CartActivity.this, transaction -> {
+                        Intent intent = new Intent(CartActivity.this, PaymentActivity.class);
+                        intent.putExtra("data", transaction);
+                        startActivity(intent);
                         finish();
                     });
                 } catch (JSONException e) {

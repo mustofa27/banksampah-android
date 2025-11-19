@@ -48,6 +48,8 @@ public class CustomViewModelFactory implements ViewModelProvider.Factory {
             return (T) new HistoryWithdrawViewModel(context);
         } else if (HistoryTransactionViewModel.class.equals(modelClass)) {
             return (T) new HistoryTransactionViewModel(context);
+        } else if (PaymentViewModel.class.equals(modelClass)) {
+            return (T) new PaymentViewModel(context);
         } else{
             return (T) new UserViewModel(context);
         }

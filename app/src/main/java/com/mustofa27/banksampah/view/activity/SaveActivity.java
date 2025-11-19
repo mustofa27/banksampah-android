@@ -140,4 +140,10 @@ public class SaveActivity extends BaseActivity {
             }
         });
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        viewModel.getCart();
+    }
 }

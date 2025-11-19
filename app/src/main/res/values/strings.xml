@@ -140,6 +140,10 @@
     <string name="pilih">Pilih</string>
     <string name="pilih_opsi">Pilih Opsi Ini</string>
     <string name="catalog">Catalog</string>
+    <string name="cara_pembayaran">Cara Pembayaran</string>
+    <string name="cara_pembayaran_content">Silahkan lakukan pembayaran sebesar nominal tertera dengan cara transfer ke rekening Bank BRI <b>741701044050536</b> atas nama <b>Nurul Rofiqoh</b></string>
+    <string name="copy_rekening">Salin Nomor Rekening</string>
+    <string name="copy_nominal">Salin Nominal</string>
     <string name="product_catalog">Katalog produk hasil daur ulang sampah</string>
     <string name="pricelist">Pricelist</string>
     <string name="spinner_text">spinner text</string>
@@ -149,7 +153,7 @@
     <string name="outlet_field">Outlet :&#160;</string>
     <string name="cash_field">Cash</string>
     <string name="transfer_field">Transfer</string>
-    <string name="nominal_giro_field">Nominal Giro :&#160;</string>
+    <string name="nominal_harus_bayar">Nominal yang harus dibayar</string>
     <string name="no_giro_field">No Giro :&#160;</string>
     <string name="due_date_field">Due Date :&#160;</string>
     <string name="input_date_field">Input Date :&#160;</string>

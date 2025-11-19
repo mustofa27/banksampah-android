@@ -179,6 +179,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
+        viewModel.getCart();
     }
 
     @Override
@@ -250,4 +251,5 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
             });
         });
     }
+
 }

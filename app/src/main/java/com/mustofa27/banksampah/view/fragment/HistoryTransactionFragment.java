@@ -3,6 +3,7 @@ package com.mustofa27.banksampah.view.fragment;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +23,7 @@ import com.mustofa27.banksampah.databinding.FragmentHistorySavingBinding;
 import com.mustofa27.banksampah.model.entity.Saving;
 import com.mustofa27.banksampah.model.entity.Transaction;
 import com.mustofa27.banksampah.view.BaseFragment;
+import com.mustofa27.banksampah.view.activity.PaymentActivity;
 import com.mustofa27.banksampah.view.adapter.AdapterCallback;
 import com.mustofa27.banksampah.view.adapter.GenericRecyclerAdapter;
 import com.mustofa27.banksampah.viewmodel.BaseViewModel;
@@ -81,7 +83,12 @@ public class HistoryTransactionFragment extends BaseFragment implements View.OnC
             @Override
             public View.OnClickListener onClickItem(Object object) {
                 return view -> {
-
+                    Transaction transaction = (Transaction) object;
+                    if(!isStringNotEmpty(transaction.getImage_path()) && transaction.getStatus() == 0) {
+                        Intent intent = new Intent(getContext(), PaymentActivity.class);
+                        intent.putExtra("data", transaction);
+                        startActivity(intent);
+                    }
                 };
             }
         });
@@ -147,7 +154,7 @@ public class HistoryTransactionFragment extends BaseFragment implements View.OnC
         } else if(transaction.getStatus() == 0){
             textView.setBackground(getActivity().getDrawable(R.drawable.bg_saving_menunggu));
             textView.setTextColor(getActivity().getColor(R.color.info_1));
-            message.setVisibility(VISIBLE);
+            message.setVisibility(isStringNotEmpty(transaction.getImage_path()) ? GONE : VISIBLE);
         } else if(transaction.getStatus() == -1){
             textView.setBackground(getActivity().getDrawable(R.drawable.bg_saving_reject));
             textView.setTextColor(getActivity().getColor(R.color.red_3));
@@ -193,6 +200,7 @@ public class HistoryTransactionFragment extends BaseFragment implements View.OnC
         viewModel.getData().observe(getViewLifecycleOwner(), transactions -> {
             viewModel.getLoading().setValue(false);
             this.transactions.removeAll(this.transactions);
+            filteredTransactions.removeAll(filteredTransactions);
             this.transactions.addAll(transactions);
             for (Transaction transaction : transactions) {
                 if(transaction.getStatusText().equalsIgnoreCase(status) || status.equalsIgnoreCase("semua")){
@@ -248,5 +256,11 @@ public class HistoryTransactionFragment extends BaseFragment implements View.OnC
                 break;
         }
         adapter.getFilter().filter(status);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        viewModel.getData();
     }
 }

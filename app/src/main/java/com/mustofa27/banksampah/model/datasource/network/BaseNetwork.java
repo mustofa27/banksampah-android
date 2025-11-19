@@ -91,8 +91,12 @@ public class BaseNetwork {
             try {
                 networkCallback.onFinish();
                 if (message.equalsIgnoreCase(connectionHandler.response_message_success)) {
-                    if (jsonObject.has("status") && jsonObject.getString("status").contains(connectionHandler.response_message_success)) {
-                        networkCallback.onSuccess(new Result.Success(jsonObject.getString("data"), jsonObject.getString("message")));;
+                    if (jsonObject.has("success") && jsonObject.getBoolean("success")) {
+                        if(jsonObject.has("current_page")){
+                            networkCallback.onSuccess(new Result.Success(jsonObject.toString(), jsonObject.getString("message")));
+                        } else {
+                            networkCallback.onSuccess(new Result.Success(jsonObject.getString("data"), jsonObject.getString("message")));
+                        }
                     } else {
                         networkCallback.onError(new Result.Error(jsonObject.getString("message")));
                     }

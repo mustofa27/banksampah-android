@@ -7,6 +7,7 @@ import com.mustofa27.banksampah.model.datasource.Result;
 import com.mustofa27.banksampah.model.datasource.local.AppDatabase;
 import com.mustofa27.banksampah.model.datasource.network.BaseNetwork;
 import com.mustofa27.banksampah.model.datasource.network.ConnectionHandler;
+import com.mustofa27.banksampah.model.datasource.network.MultipartFile;
 import com.mustofa27.banksampah.model.datasource.network.NetworkCallback;
 import com.mustofa27.banksampah.model.entity.Transaction;
 import com.mustofa27.banksampah.model.entity.Transaction;
@@ -18,6 +19,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
 
 /**
  * Class that requests authentication and user information from the remote data source and
@@ -80,9 +82,33 @@ public class TransactionRepository extends BaseRepository {
             @Override
             public void onSuccess(Result result) {
                 Transaction transaction = dataSource.getGson().fromJson(((Result.Success) result).getData().toString(), Transaction.class);
-                transactionMutableLiveData.setValue(transaction);
                 vmRepoInterface.setMessage(result.toString());
                 vmRepoInterface.getStatus().setValue(Boolean.TRUE);
+                transactionMutableLiveData.setValue(transaction);
+            }
+
+            @Override
+            public void onError(Result result) {
+                vmRepoInterface.setMessage(result.toString());
+                vmRepoInterface.getStatus().setValue(false);
+            }
+        });
+        return transactionMutableLiveData;
+    }
+    public LiveData<Transaction> addPaymentProof(Map<String, Object> param, Map<String, MultipartFile> paramFile){
+        // handle login
+        dataSource.Connect(ConnectionHandler.post_method, "transaction/payment", param, paramFile, new NetworkCallback() {
+            @Override
+            public void onFinish() {
+
+            }
+
+            @Override
+            public void onSuccess(Result result) {
+                Transaction transaction = dataSource.getGson().fromJson(((Result.Success) result).getData().toString(), Transaction.class);
+                vmRepoInterface.setMessage(result.toString());
+                vmRepoInterface.getStatus().setValue(Boolean.TRUE);
+                transactionMutableLiveData.setValue(transaction);
             }
 
             @Override

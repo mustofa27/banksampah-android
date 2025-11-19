@@ -1,6 +1,8 @@
 package com.mustofa27.banksampah.model.entity;
 
-public class TransactionItem {
+import java.io.Serializable;
+
+public class TransactionItem implements Serializable {
     private int id;
     private int transaction_id;
     private int product_id;

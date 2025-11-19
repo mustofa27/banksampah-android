@@ -1,8 +1,9 @@
 package com.mustofa27.banksampah.model.entity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Transaction {
+public class Transaction implements Serializable {
     private int id;
     private int user_id;
     private int total_price;

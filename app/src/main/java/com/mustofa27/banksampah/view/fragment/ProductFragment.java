@@ -186,4 +186,10 @@ public class ProductFragment extends BaseFragment {
             binding.indicator.setVisibility(cartItems.size() > 0 ? View.VISIBLE : View.GONE);
         });
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        viewModel.getCart();
+    }
 }
